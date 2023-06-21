@@ -2,6 +2,7 @@
 provide common version catalog
 
 ### Usage
+[![](https://jitpack.io/v/foodiestudio/libs-versions.svg)](https://jitpack.io/#foodiestudio/libs-versions)
 
 ```groovy
 // settings.gradle
