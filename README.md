@@ -2,9 +2,8 @@
 provide common version catalog
 
 ### Usage
-[![](https://jitpack.io/v/foodiestudio/libs-versions.svg)](https://jitpack.io/#foodiestudio/libs-versions)
 
-```groovy
+```kotlin
 // settings.gradle.kts
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
