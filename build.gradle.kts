@@ -19,6 +19,17 @@ publishing {
             from(components["versionCatalog"])
         }
     }
+
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/foodiestudio/libs-versions")
+            credentials {
+                username = System.getenv("USERNAME")
+                password = System.getenv("TOKEN")
+            }
+        }
+    }
 }
 
 // fixing Task 'assemble' not found in root project
