@@ -20,3 +20,8 @@ publishing {
         }
     }
 }
+
+// fixing Task 'assemble' not found in root project
+tasks.register("assemble") {
+    // do nothing, just make jitpack happy
+}
