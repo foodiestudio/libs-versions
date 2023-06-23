@@ -50,7 +50,7 @@ jobs:
     - name: Notify package added
       uses: dacbd/create-issue-action@v1
       #  TODO 临时测试下，仅在非稳定版本发，待删
-      if: ${{ steps.regex-match.outputs.match == '' }}
+      # if: ${{ steps.regex-match.outputs.match == '' }}
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         repo: public
