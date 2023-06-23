@@ -56,5 +56,5 @@ jobs:
       with:
         github_token: ${{ secrets.ACTION_ISSUE_TOKEN }}
         repo: foodiestudio/public
-        title: [${{ github.repository }}] ${{ github.event.release.tag_name }} package created
+        title: ${{ github.repository }} | ${{ github.event.release.tag_name }} package created
         body: ${{ github.event.release.body }}
