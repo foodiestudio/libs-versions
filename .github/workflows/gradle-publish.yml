@@ -50,7 +50,7 @@ jobs:
       id: new-issue
       uses: dacbd/create-issue-action@v1.2.1
       with:
-        token: ${{ github.token }}
+        token: ${{ secrets.ACTION_ISSUE_TOKEN }}
         title: ${{ github.event.release.tag_name }} package added
         body: new issue
     - run: |
@@ -62,6 +62,6 @@ jobs:
       #  TODO 临时测试下，仅在非稳定版本发，待删
       # if: ${{ steps.regex-match.outputs.match == '' }}
       with:
-        github_token: ${{ github.token }}
+        github_token: ${{ secrets.ACTION_ISSUE_TOKEN }}
         repo: foodiestudio/public
         title: ${{ github.event.release.tag_name }} package added
