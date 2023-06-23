@@ -46,12 +46,22 @@ jobs:
         # 只匹配稳定版本
         regex: '^[vV]?[0-9]+(.[0-9]+)+'
 
-    # FIXME 针对稳定版本，并且无论成功与否都会发
+    - name: Create Github Issue
+      id: new-issue
+      uses: dacbd/create-issue-action@v1.2.1
+      with:
+        token: ${{ github.token }}
+        title: ${{ github.event.release.tag_name }} package added
+        body: new issue
+    - run: |
+        echo "created issue number: ${{ steps.new-issue.outputs.number }}"
+
+      # FIXME 针对稳定版本，并且无论成功与否都会发
     - name: Notify package added
       uses: actions-ecosystem/action-create-issue@v1
       #  TODO 临时测试下，仅在非稳定版本发，待删
       # if: ${{ steps.regex-match.outputs.match == '' }}
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ github.token }}
         repo: foodiestudio/public
         title: ${{ github.event.release.tag_name }} package added
