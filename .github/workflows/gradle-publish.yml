@@ -52,7 +52,6 @@ jobs:
       #  TODO 临时测试下，仅在非稳定版本发，待删
       # if: ${{ steps.regex-match.outputs.match == '' }}
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         repo: public
         title: ${{ github.event.release.tag_name }} package added
-        body: ${{ steps.publish.outputs }}
