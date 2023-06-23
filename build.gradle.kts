@@ -1,8 +1,6 @@
 plugins {
     `version-catalog`
-    `maven-publish`
-// TODO
-//    id("github-publish")
+    id("github-publish")
 }
 
 group = "com.github.foodiestudio"
@@ -23,19 +21,18 @@ publishing {
     }
 }
 
-// TODO
-//github {
-//    owner = "foodiestudio"
-//    credentials {
-//        username = localProp("github.username") ?: System.getenv("USERNAME")
-//        password = localProp("github.classicToken") ?: System.getenv("TOKEN")
-//    }
-//    publishing {
-//        repo("libs-versions") {
-//            includeVersion = all()
-//        }
-//        repo("public") {
-//            includeVersion = stableOnly()
-//        }
-//    }
-//}
+githubPackage {
+    owner = "foodiestudio"
+    credentials {
+        username = rootProject.findLocalProp("github.username") ?: System.getenv("USERNAME")
+        password = rootProject.findLocalProp("github.classicToken") ?: System.getenv("TOKEN")
+    }
+    packages {
+        repo("libs-versions") {
+            includeVersion = all()
+        }
+        repo("public") {
+            includeVersion = stableOnly()
+        }
+    }
+}
