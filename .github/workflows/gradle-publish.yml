@@ -44,7 +44,7 @@ jobs:
 #        text: ${{ github.event.release.tag_name }}
         text: "2023.01.00-rc.10"
         # 只匹配稳定版本
-        regex: '^[vV]?[0-9]+(.[0-9]+)+\$'
+        regex: '^[vV]?[0-9]+(.[0-9]+)+'
     - run: |
         echo "regex match fail result: (${{ steps.regex-match.outputs.match }})"
     - uses: actions-ecosystem/action-regex-match@v2
@@ -52,13 +52,13 @@ jobs:
       with:
         text: "2023.01.00"
         # 只匹配稳定版本
-        regex: '^[vV]?[0-9]+(.[0-9]+)+\$'
+        regex: '^[vV]?[0-9]+(.[0-9]+)+'
     - run: |
         echo "regex match success result: (${{ steps.regex-match2.outputs.match }})"
       # FIXME 针对稳定版本，并且无论成功与否都会发
     - name: Notify package added
       uses: actions-ecosystem/action-create-issue@v1
-      if: ${{ steps.regex-match.outputs.match != '' }}
+      if: ${{ steps.regex-match.outputs.match == github.event.release.tag_name  }}
       with:
         github_token: ${{ secrets.ACTION_ISSUE_TOKEN }}
         repo: foodiestudio/public
