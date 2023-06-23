@@ -48,10 +48,10 @@ jobs:
 
     # FIXME 针对稳定版本，并且无论成功与否都会发
     - name: Notify package added
-      uses: dacbd/create-issue-action@v1
+      uses: actions-ecosystem/action-create-issue@v1
       #  TODO 临时测试下，仅在非稳定版本发，待删
       # if: ${{ steps.regex-match.outputs.match == '' }}
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        repo: public
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        repo: foodiestudio/public
         title: ${{ github.event.release.tag_name }} package added

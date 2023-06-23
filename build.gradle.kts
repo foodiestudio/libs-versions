@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.github.foodiestudio"
-version = "2023.01.00-rc.7"
+version = "2023.01.00-rc.8"
 
 catalog {
     // declare the aliases, bundles and versions in this block
