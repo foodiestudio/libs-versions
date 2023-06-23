@@ -29,32 +29,23 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-#    - name: Publish to GitHub Packages
-#      id: publish
-#      uses: gradle/gradle-build-action@v2.4.2
-#      with:
-#        arguments: publish
-#      env:
-#        USERNAME: ${{ github.actor }}
-#        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Publish to GitHub Packages
+      id: publish
+      uses: gradle/gradle-build-action@v2.4.2
+      with:
+        arguments: publish
+      env:
+        USERNAME: ${{ github.actor }}
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - uses: actions-ecosystem/action-regex-match@v2
       id: regex-match
       with:
-#        text: ${{ github.event.release.tag_name }}
-        text: "2023.01.00-rc.10"
+        text: ${{ github.event.release.tag_name }}
         # 只匹配稳定版本
         regex: '^[vV]?[0-9]+(.[0-9]+)+'
     - run: |
-        echo "regex match fail result: (${{ steps.regex-match.outputs.match }})"
-    - uses: actions-ecosystem/action-regex-match@v2
-      id: regex-match2
-      with:
-        text: "2023.01.00"
-        # 只匹配稳定版本
-        regex: '^[vV]?[0-9]+(.[0-9]+)+'
-    - run: |
-        echo "regex match success result: (${{ steps.regex-match2.outputs.match }})"
+        echo "regex matched result: (${{ steps.regex-match.outputs.match }})"
       # FIXME 针对稳定版本，并且无论成功与否都会发
     - name: Notify package added
       uses: actions-ecosystem/action-create-issue@v1
