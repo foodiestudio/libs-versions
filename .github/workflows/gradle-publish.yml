@@ -46,23 +46,24 @@ jobs:
         text: ${{ github.event.release.tag_name }}
         # 只匹配稳定版本
         regex: '^[vV]?[0-9]+(.[0-9]+)+'
-
-    - name: Create Github Issue
-      id: new-issue
-      uses: dacbd/create-issue-action@v1.2.1
-      with:
-        token: ${{ secrets.ACTION_ISSUE_TOKEN }}
-        title: ${{ github.event.release.tag_name }} package added
-        body: new issue
     - run: |
-        echo "created issue number: ${{ steps.new-issue.outputs.number }}"
+        echo "regex match fail result: (${{ steps.regex-match.outputs.match }})"
+
+    - uses: actions-ecosystem/action-regex-match@v2
+      id: regex-match
+      with:
+        text: 2023.0.1
+        # 只匹配稳定版本
+        regex: '^[vV]?[0-9]+(.[0-9]+)+'
+    - run: |
+        echo "regex match success result: (${{ steps.regex-match.outputs.match }})"
 
       # FIXME 针对稳定版本，并且无论成功与否都会发
-    - name: Notify package added
-      uses: actions-ecosystem/action-create-issue@v1
-      #  TODO 临时测试下，仅在非稳定版本发，待删
-      # if: ${{ steps.regex-match.outputs.match == '' }}
-      with:
-        github_token: ${{ secrets.ACTION_ISSUE_TOKEN }}
-        repo: foodiestudio/public
-        title: ${{ github.event.release.tag_name }} package added
+#    - name: Notify package added
+#      uses: actions-ecosystem/action-create-issue@v1
+#      #  TODO 临时测试下，仅在非稳定版本发，待删
+#      # if: ${{ steps.regex-match.outputs.match == '' }}
+#      with:
+#        github_token: ${{ secrets.ACTION_ISSUE_TOKEN }}
+#        repo: foodiestudio/public
+#        title: ${{ github.event.release.tag_name }} package added
