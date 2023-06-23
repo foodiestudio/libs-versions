@@ -29,17 +29,15 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
-    # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
-    # the publishing section of your build.gradle
-#    TODO 临时注释掉
-#    - name: Publish to GitHub Packages
-#      id: publish
-#      uses: gradle/gradle-build-action@4137be6a8bf7d7133955359dbd952c0ca73b1021
-#      with:
-#        arguments: publish
-#      env:
-#        USERNAME: ${{ github.actor }}
-#        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Publish to GitHub Packages
+      id: publish
+      uses: gradle/gradle-build-action@v2.4.2
+      with:
+        arguments: publish
+      env:
+        USERNAME: ${{ github.actor }}
+        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
     - uses: actions-ecosystem/action-regex-match@v2
       id: regex-match
       with:
@@ -51,8 +49,7 @@ jobs:
       # FIXME 针对稳定版本，并且无论成功与否都会发
     - name: Notify package added
       uses: actions-ecosystem/action-create-issue@v1
-      #  TODO 临时测试下，仅在非稳定版本发，待删
-      if: ${{ steps.regex-match.outputs.match == '' }}
+      if: ${{ steps.regex-match.outputs.match != '' }}
       with:
         github_token: ${{ secrets.ACTION_ISSUE_TOKEN }}
         repo: foodiestudio/public
