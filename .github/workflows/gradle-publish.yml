@@ -40,33 +40,14 @@ jobs:
 #      env:
 #        USERNAME: ${{ github.actor }}
 #        TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    - uses: actions-ecosystem/action-regex-match@v2
-      id: regex-match
-      with:
-        text: ${{ github.event.release.tag_name }}
-        # 只匹配稳定版本
-        regex: '^[vV]?[0-9]+(.[0-9]+)+'
-    - run: |
-        echo "regex match fail result: (${{ steps.regex-match.outputs.match }})"
 
-    - uses: actions-ecosystem/action-regex-match@v2
-      id: regex-match2
-      with:
-        text: 2023.0.1
-        # 只匹配稳定版本
-        regex: '^[vV]?[0-9]+(.[0-9]+)+'
-    - run: |
-        echo "regex match success result: (${{ steps.regex-match2.outputs.match }})"
-    - run: |
-        echo "${{ github.event.release.body }}"
-    - run: |
-        echo "${{ github.repository }}"
       # FIXME 针对稳定版本，并且无论成功与否都会发
-#    - name: Notify package added
-#      uses: actions-ecosystem/action-create-issue@v1
-#      #  TODO 临时测试下，仅在非稳定版本发，待删
-#      # if: ${{ steps.regex-match.outputs.match == '' }}
-#      with:
-#        github_token: ${{ secrets.ACTION_ISSUE_TOKEN }}
-#        repo: foodiestudio/public
-#        title: ${{ github.event.release.tag_name }} package added
+    - name: Notify package added
+      uses: actions-ecosystem/action-create-issue@v1
+      #  TODO 临时测试下，仅在非稳定版本发，待删
+      if: ${{ steps.regex-match.outputs.match == '' }}
+      with:
+        github_token: ${{ secrets.ACTION_ISSUE_TOKEN }}
+        repo: foodiestudio/public
+        title: [${{ github.repository }}] ${{ github.event.release.tag_name }} package created
+        body: ${{ github.event.release.body }}
