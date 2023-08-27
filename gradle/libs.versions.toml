@@ -20,7 +20,7 @@ espresso = "3.5.1"
 
 # internal
 sugar = "1.0.0-rc.6"
-dev-tools = { strictly = "[0.0.1, 0.1.0[", prefer = "0.0.1" }
+devtools = "0.1.0"
 theme = { strictly = "[0.1.0, 1.0.0[", prefer = "0.1.4-rc.1" }
 ctc = { strictly = "[0.1.0, 1.0.0[", prefer = "0.1.1" }
 
@@ -74,7 +74,7 @@ mmkv = { module = "com.tencent:mmkv", version.ref = "mmkv" }
 
 ctc = { module = "com.github.kkoshin:ctc", version.ref = "ctc" }
 sugar = { module = "com.github.foodiestudio:sugar", version.ref = "sugar" }
-dev-tools = { module = "com.github.foodiestudio:dev-tools", version.ref = "dev-tools" }
+devtools = { module = "com.github.foodiestudio:devtools", version.ref = "devtools" }
 theme = { module = "com.github.foodiestudio:app-theme", version.ref = "theme" }
 
 # for lint (optional)
@@ -93,7 +93,7 @@ espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "esp
 jetpack = ["androidx-ktx", "lifecycle-ktx", "datastore", "datastore-preferences"]
 compose = ["compose-foundation", "compose-ui", "compose-material", "activity-compose", "compose-livedata", "compose-material-icons"]
 network = ["retrofit", "retrofit-converter-gson", "okhttp-logging"]
-debug = ["compose-ui-tooling", "dev-tools"]
+debug = ["compose-ui-tooling", "devtools"]
 unit-tests = ["junit"]
 android-tests = ["junit-android", "junit-compose", "espresso"]
 lint = ["lint-core", "lint-api", "lint-checks", "lint-tests"]
