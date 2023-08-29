@@ -55,6 +55,8 @@ dependencies {
     implementation(platform(libs.compose.bom))
     implementation(libs.bundles.compose.core)
     implementation(libs.bundles.jetpack.compose)
+    implementation(libs.bundles.accompanist)
+
     implementation(libs.bundles.internal)
 
     debugImplementation(libs.bundles.debug)
