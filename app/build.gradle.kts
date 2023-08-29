@@ -2,6 +2,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.sqldelight)
 }
 
 android {
@@ -34,14 +36,28 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
+    }
 }
 
+// > ./gradlew dependencies | grep "releaseCompileClasspath"
+// check versions: kotlin, compose
 dependencies {
-    implementation(platform(libs.compose.bom))
-    implementation(platform(libs.okhttp.bom))
-    implementation(libs.bundles.compose)
-    implementation(libs.bundles.jetpack)
     implementation(libs.bundles.network)
+    implementation(libs.bundles.jetpack)
+    implementation(platform(libs.okhttp.bom))
+    implementation(libs.bundles.others)
+
+    implementation(platform(libs.compose.bom))
+    implementation(libs.bundles.compose.core)
+    implementation(libs.bundles.jetpack.compose)
+    implementation(libs.bundles.internal)
+
+    debugImplementation(libs.bundles.debug)
     testImplementation(libs.junit)
-//    androidTestImplementation(libs.bundles.android.tests)
+    androidTestImplementation(libs.bundles.android.tests)
 }
