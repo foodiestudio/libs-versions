@@ -12,11 +12,13 @@ kotlin = "1.8.10!!"
 
 # compose
 # https://developer.android.com/jetpack/compose/bom/bom-mapping
-compose-bom = "2023.04.00" # compose 1.4.1
+compose-bom = "2023.04.01" # compose 1.4.2
 # https://developer.android.com/jetpack/androidx/releases/activity
-activity-compose = "1.7.0"
+activity-compose = "1.7.2"
 # https://developer.android.com/jetpack/androidx/releases/navigation
 navigation-compose = "2.5.3"
+accompanist = "0.30.1"
+startup = "1.1.1"
 
 # jetpack
 core-ktx = "1.9.0" # looks legacy
@@ -31,15 +33,16 @@ retrofit = "2.9.0"
 sugar = "1.0.0-rc.6"
 theme = "0.1.4-rc.1"
 ctc = "0.1.1"
-#devtools = "0.1.0"
+devtools = "0.1.1"
 
 # other third-party
 logcat = "0.1"
 # https://github.com/coil-kt/coil/blob/main/CHANGELOG.md
 coil-compose = "2.3.0"
 # https://github.com/InsertKoinIO/koin/blob/main/CHANGELOG.md
-koin-android-compose = "3.4.2"
+koin-android-compose = "3.4.4"
 mmkv = "1.2.15"
+okio = "3.4.0"
 
 # test
 junit = "4.13.2"
@@ -61,6 +64,7 @@ okhttp-bom = { module = "com.squareup.okhttp3:okhttp-bom", version.ref = "okhttp
 okhttp-logging = { module = "com.squareup.okhttp3:logging-interceptor" }
 
 # jetpack
+startup = { module = "androidx.startup:startup-runtime", version.ref = "startup" }
 androidx-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
 lifecycle-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
 androidx-lifecycle-service = { module = "androidx.lifecycle:lifecycle-service", version.ref = "lifecycle" }
@@ -68,6 +72,13 @@ datastore = { module = "androidx.datastore:datastore", version.ref = "datastore"
 datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
 activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
 navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation-compose" }
+accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist" }
+accompanist-navigation-material = { module = "com.google.accompanist:accompanist-navigation-material", version.ref = "accompanist" }
+accompanist-navigation-animation = { module = "com.google.accompanist:accompanist-navigation-animation", version.ref = "accompanist" }
+accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanist" }
+accompanist-adaptive = { module = "com.google.accompanist:accompanist-adaptive", version.ref = "accompanist" }
+accompanist-testharness = { module = "com.google.accompanist:accompanist-testharness", version.ref = "accompanist" }
+accompanist-placeholder = { module = "com.google.accompanist:accompanist-placeholder", version.ref = "accompanist" }
 
 # compose core
 compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
@@ -82,7 +93,7 @@ compose-material-icons = { module = "androidx.compose.material:material-icons-ex
 ctc = { module = "com.github.kkoshin:ctc", version.ref = "ctc" }
 sugar = { module = "com.github.foodiestudio:sugar", version.ref = "sugar" }
 theme = { module = "com.github.foodiestudio:app-theme", version.ref = "theme" }
-#devtools = { module = "com.github.foodiestudio:devtools", version.ref = "devtools" }
+devtools = { module = "com.github.foodiestudio:devtools", version.ref = "devtools" }
 
 # other third-party
 logcat = { module = "com.squareup.logcat:logcat", version.ref = "logcat" }
@@ -90,6 +101,7 @@ coil = { module = "io.coil-kt:coil-compose", version.ref = "coil-compose" }
 koin = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin-android-compose" }
 sql = { module = "com.squareup.sqldelight:android-driver", version.ref = "sqldelight" }
 mmkv = { module = "com.tencent:mmkv", version.ref = "mmkv" }
+okio = { module = "com.squareup.okio:okio", version.ref = "okio" }
 
 # for lint (optional)
 lint-core = { module = "com.android.tools.lint:lint", version.ref = "lint" }
@@ -105,13 +117,17 @@ espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "esp
 test-runner = { group = "com.android.support.test", name = "runner", version.ref = "test-runner" }
 
 [bundles]
-jetpack = ["androidx-ktx", "lifecycle-ktx", "datastore", "datastore-preferences"]
+jetpack = ["startup", "androidx-ktx", "lifecycle-ktx", "datastore", "datastore-preferences"]
 network = ["retrofit", "retrofit-converter-moshi", "okhttp-logging"]
-compose-core = ["compose-foundation", "compose-ui", "compose-material", "compose-material-icons", "compose-livedata" ]
+compose-core = ["compose-foundation", "compose-ui", "compose-material", "compose-material-icons", "compose-livedata"]
 jetpack-compose = ["activity-compose", "navigation-compose"]
-debug = ["compose-ui-tooling"]
+debug = ["compose-ui-tooling", "devtools"]
 unit-tests = ["junit"]
 android-tests = ["junit-android", "junit-compose", "espresso", "test-runner"]
 lint = ["lint-core", "lint-api", "lint-checks", "lint-tests"]
 internal = ["theme", "ctc", "sugar"]
-others = ["logcat", "koin", "coil", "mmkv"]
+others = ["logcat", "koin", "coil", "mmkv", "okio"]
+accompanist = ["accompanist-systemuicontroller", "accompanist-navigation-material",
+    "accompanist-navigation-animation", "accompanist-permissions", "accompanist-adaptive",
+    "accompanist-testharness", "accompanist-placeholder"
+]

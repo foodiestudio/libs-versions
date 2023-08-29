@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "io.github.foodiestudio"
-version = "2023.03.00"
+version = libs.versions.compose.bom.get()
 
 catalog {
     // declare the aliases, bundles and versions in this block
