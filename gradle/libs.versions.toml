@@ -2,36 +2,50 @@
 # plugin
 agp = "7.4.0"
 lint = "30.2.0"
-ksp = "1.8.0-1.0.8"
+ksp = "1.8.10-1.0.9"
 sqldelight = "1.5.4"
 # https://developer.android.google.cn/jetpack/androidx/releases/compose-kotlin
-compose-compiler = "1.4.1!!"
+compose-compiler = "1.4.2"
 
-# langauge and platform
-kotlin = "1.8.0!!"
-composeBom = "2023.03.00" # kotlin 1.8.0
-activity-compose = "1.5.1"
-lifecycle = "2.5.1"
-datastore = "1.0.0"
+# https://developer.android.com/jetpack/androidx/releases/compose-kotlin
+kotlin = "1.8.10!!"
+
+# compose
+# https://developer.android.com/jetpack/compose/bom/bom-mapping
+compose-bom = "2023.04.00" # compose 1.4.1
+# https://developer.android.com/jetpack/androidx/releases/activity
+activity-compose = "1.7.0"
+# https://developer.android.com/jetpack/androidx/releases/navigation
+navigation-compose = "2.5.3"
+
+# jetpack
 core-ktx = "1.9.0" # looks legacy
-junit = "4.13.2"
-junit-android = "1.1.5"
-espresso = "3.5.1"
+lifecycle = "2.6.1"
+datastore = "1.0.0"
+
+# network
+okhttp-bom = "4.11.0"
+retrofit = "2.9.0"
 
 # internal
 sugar = "1.0.0-rc.6"
-devtools = "0.1.0"
-theme = { strictly = "[0.1.0, 1.0.0[", prefer = "0.1.4-rc.1" }
-ctc = { strictly = "[0.1.0, 1.0.0[", prefer = "0.1.1" }
+theme = "0.1.4-rc.1"
+ctc = "0.1.1"
+#devtools = "0.1.0"
 
 # other third-party
-okhttpBom = "4.10.0"
-retrofit = "2.9.0"
 logcat = "0.1"
-compose-destinations = "1.7.32-beta!!" # require compose 1.3.x
-coil-compose = "2.2.2"
-koin-android = "3.3.2"
+# https://github.com/coil-kt/coil/blob/main/CHANGELOG.md
+coil-compose = "2.3.0"
+# https://github.com/InsertKoinIO/koin/blob/main/CHANGELOG.md
+koin-android-compose = "3.4.2"
 mmkv = "1.2.15"
+
+# test
+junit = "4.13.2"
+junit-android = "1.1.5"
+espresso = "3.5.1"
+test-runner = "1.0.2"
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -42,40 +56,40 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 [libraries]
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
-retrofit-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
-okhttp-bom = { module = "com.squareup.okhttp3:okhttp-bom", version.ref = "okhttpBom" }
+retrofit-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
+okhttp-bom = { module = "com.squareup.okhttp3:okhttp-bom", version.ref = "okhttp-bom" }
 okhttp-logging = { module = "com.squareup.okhttp3:logging-interceptor" }
 
+# jetpack
 androidx-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
 lifecycle-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
 androidx-lifecycle-service = { module = "androidx.lifecycle:lifecycle-service", version.ref = "lifecycle" }
 datastore = { module = "androidx.datastore:datastore", version.ref = "datastore" }
 datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
 activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity-compose" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation-compose" }
 
-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+# compose core
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose-bom" }
+compose-foundation = { module = "androidx.compose.foundation:foundation" }
 compose-ui = { module = "androidx.compose.ui:ui" }
 compose-material = { module = "androidx.compose.material:material" }
 compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-livedata = { module = "androidx.compose.runtime:runtime-livedata" }
 compose-material-icons = { module = "androidx.compose.material:material-icons-extended" }
 
-# compose destination
-compose-destinations-core = { module = "io.github.raamcosta.compose-destinations:animations-core", version.ref = "compose-destinations" }
-compose-destinations-ksp = { module = "io.github.raamcosta.compose-destinations:ksp", version.ref = "compose-destinations" }
-
-# common
-logcat = { module = "com.squareup.logcat:logcat", version.ref = "logcat" }
-coil = { module = "io.coil-kt:coil-compose", version.ref = "coil-compose" }
-koin = { module = "io.insert-koin:koin-android", version.ref = "koin-android" }
-sql = { module = "com.squareup.sqldelight:android-driver", version.ref = "sqldelight" }
-mmkv = { module = "com.tencent:mmkv", version.ref = "mmkv" }
-
+# internal
 ctc = { module = "com.github.kkoshin:ctc", version.ref = "ctc" }
 sugar = { module = "com.github.foodiestudio:sugar", version.ref = "sugar" }
-devtools = { module = "com.github.foodiestudio:devtools", version.ref = "devtools" }
 theme = { module = "com.github.foodiestudio:app-theme", version.ref = "theme" }
+#devtools = { module = "com.github.foodiestudio:devtools", version.ref = "devtools" }
+
+# other third-party
+logcat = { module = "com.squareup.logcat:logcat", version.ref = "logcat" }
+coil = { module = "io.coil-kt:coil-compose", version.ref = "coil-compose" }
+koin = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin-android-compose" }
+sql = { module = "com.squareup.sqldelight:android-driver", version.ref = "sqldelight" }
+mmkv = { module = "com.tencent:mmkv", version.ref = "mmkv" }
 
 # for lint (optional)
 lint-core = { module = "com.android.tools.lint:lint", version.ref = "lint" }
@@ -88,12 +102,16 @@ junit = { module = "junit:junit", version.ref = "junit" }
 junit-android = { module = "androidx.test.ext:junit", version.ref = "junit-android" }
 junit-compose = { module = "androidx.compose.ui:ui-test-junit4" }
 espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
+test-runner = { group = "com.android.support.test", name = "runner", version.ref = "test-runner" }
 
 [bundles]
 jetpack = ["androidx-ktx", "lifecycle-ktx", "datastore", "datastore-preferences"]
-compose = ["compose-foundation", "compose-ui", "compose-material", "activity-compose", "compose-livedata", "compose-material-icons"]
-network = ["retrofit", "retrofit-converter-gson", "okhttp-logging"]
-debug = ["compose-ui-tooling", "devtools"]
+network = ["retrofit", "retrofit-converter-moshi", "okhttp-logging"]
+compose-core = ["compose-foundation", "compose-ui", "compose-material", "compose-material-icons", "compose-livedata" ]
+jetpack-compose = ["activity-compose", "navigation-compose"]
+debug = ["compose-ui-tooling"]
 unit-tests = ["junit"]
-android-tests = ["junit-android", "junit-compose", "espresso"]
+android-tests = ["junit-android", "junit-compose", "espresso", "test-runner"]
 lint = ["lint-core", "lint-api", "lint-checks", "lint-tests"]
+internal = ["theme", "ctc", "sugar"]
+others = ["logcat", "koin", "coil", "mmkv"]
