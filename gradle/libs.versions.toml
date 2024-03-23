@@ -30,7 +30,7 @@ okhttp-bom = "4.11.0"
 retrofit = "2.9.0"
 
 # internal
-sugar = "1.0.0-rc.6"
+sugar = "1.0.0"
 theme = "0.1.4-rc.1"
 ctc = "0.1.1"
 devtools = "0.1.1"
