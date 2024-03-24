@@ -50,6 +50,8 @@ dependencies {
     implementation(libs.bundles.network)
     implementation(libs.bundles.jetpack)
     implementation(platform(libs.okhttp.bom))
+    implementation(platform(libs.coil.bom))
+    implementation(platform(libs.koin.bom))
     implementation(libs.bundles.others)
 
     implementation(platform(libs.compose.bom))
