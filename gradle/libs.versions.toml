@@ -5,14 +5,14 @@ lint = "30.4.0" # always equals (agp + 23.0.0)
 ksp = "1.8.10-1.0.9"
 sqldelight = "1.5.4"
 # https://developer.android.google.cn/jetpack/androidx/releases/compose-kotlin
-compose-compiler = "1.4.2"
+compose-compiler = "1.4.3"
 
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin
 kotlin = "1.8.10!!"
 
 # compose
 # https://developer.android.com/jetpack/compose/bom/bom-mapping
-compose-bom = "2023.04.01" # compose 1.4.2
+compose-bom = "2023.05.00" # compose 1.4.3
 # https://developer.android.com/jetpack/androidx/releases/activity
 activity-compose = "1.7.2"
 # https://developer.android.com/jetpack/androidx/releases/navigation
@@ -30,7 +30,7 @@ okhttp-bom = "4.11.0"
 retrofit = "2.9.0"
 
 # internal
-sugar = "1.0.0-rc.6"
+sugar = "1.0.0"
 theme = "0.1.4-rc.1"
 ctc = "0.1.1"
 devtools = "0.1.1"

@@ -1,14 +1,11 @@
-@Suppress("DSL_SCOPE_VIOLATION") // TODO: Remove once KTIJ-19369 is fixed
 plugins {
-    alias(libs.plugins.android.application) apply false
-    alias(libs.plugins.kotlin.android) apply false
     `version-catalog`
     `maven-publish`
     signing
 }
 
 group = "io.github.foodiestudio"
-version = libs.versions.compose.bom.get()
+version = "2023.05.00"
 
 catalog {
     // declare the aliases, bundles and versions in this block
