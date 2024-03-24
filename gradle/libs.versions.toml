@@ -37,7 +37,7 @@ retrofit = "2.9.0"
 sugar = "1.0.0"
 theme = "0.1.4-rc.1"
 ctc = "0.1.1"
-devtools = "0.1.1"
+devtools = "0.1.5"
 
 # other third-party
 logcat = "0.1"
