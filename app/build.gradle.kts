@@ -8,7 +8,8 @@ plugins {
 
 android {
     namespace = "com.example.app"
-    compileSdk = 33
+    // AGP 8 require compileSdk to be 34
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.app"
