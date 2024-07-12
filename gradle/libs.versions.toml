@@ -54,7 +54,7 @@ retrofit-converter-kotlinx = "1.0.0"
 junit = "4.13.2"
 junit-android = "1.1.5"
 espresso = "3.5.1"
-test-runner = "1.0.2"
+test-runner = "1.5.2"
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -125,7 +125,7 @@ junit = { module = "junit:junit", version.ref = "junit" }
 junit-android = { module = "androidx.test.ext:junit", version.ref = "junit-android" }
 junit-compose = { module = "androidx.compose.ui:ui-test-junit4" }
 espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
-test-runner = { group = "com.android.support.test", name = "runner", version.ref = "test-runner" }
+test-runner = { group = "androidx.test", name = "runner", version.ref = "test-runner" }
 
 [bundles]
 jetpack = ["startup", "androidx-ktx", "lifecycle-ktx", "datastore", "datastore-preferences"]
