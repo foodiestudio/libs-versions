@@ -4,11 +4,19 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.ksp)
     alias(libs.plugins.sqldelight)
+    alias(libs.plugins.kotlinx.serialization)
+}
+
+sqldelight {
+    database("AppDatabase") {
+        packageName = "com.example.app.database"
+    }
 }
 
 android {
     namespace = "com.example.app"
-    compileSdk = 33
+    // AGP 8 require compileSdk to be 34
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.app"
@@ -17,15 +25,24 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
+//        debug {
+//            isMinifyEnabled = false
+//            proguardFiles(
+//                getDefaultProguardFile("proguard-android-optimize.txt"),
+//                "proguard-rules.pro",
+//                "retrofit2.pro"
+//            )
+//        }
         release {
-            isMinifyEnabled = false
+            isMinifyEnabled = true
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                "proguard-rules.pro",
+                "retrofit2.pro"
             )
         }
     }
@@ -55,11 +72,17 @@ dependencies {
     implementation(libs.bundles.others)
 
     implementation(platform(libs.compose.bom))
+    androidTestImplementation(platform(libs.compose.bom))
     implementation(libs.bundles.compose.core)
     implementation(libs.bundles.jetpack.compose)
     implementation(libs.bundles.accompanist)
 
     implementation(libs.bundles.internal)
+    implementation(libs.sql)
+    implementation(libs.retrofit.converter.moshi)
+
+    implementation(libs.retrofit.converter.kotlinx)
+    implementation(libs.kotlinx.json)
 
     debugImplementation(libs.bundles.debug)
     testImplementation(libs.junit)
