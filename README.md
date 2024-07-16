@@ -13,6 +13,7 @@
 ### SOP
 1. https://developer.android.com/develop/ui/compose/bom/bom-mapping 找到下一个版本号，确定 Compose 版本
    a. 调整 accompanist 版本
+   b. 调整 compose-compiler 版本
 2. 确定 Kotlin 版本，不一定要升级，一旦升级的话，对应的版本都要改动，Kotlin 版本必须一致
    a. Kotlin 版本只考虑 .0 和 .10 版本
 3. 一些三方库单独的升级
