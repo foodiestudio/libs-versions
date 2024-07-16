@@ -19,8 +19,6 @@ class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterialNavigationApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // TODO(Jiangc): setup theme using accompanist
-
         setContent {
             val bottomSheetNavigator = rememberBottomSheetNavigator()
             val navController = rememberNavController(bottomSheetNavigator)
