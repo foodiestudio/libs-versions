@@ -15,12 +15,15 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.example.app.RouterContext
 import com.example.app.database.HockeyPlayer
 import com.example.app.datasource.GithubRelease
 import com.github.foodiestudio.application.theme.AppTheme
-import com.github.foodiestudio.application.theme.ApplicationTheme
+import com.github.foodiestudio.sugar.notification.toast
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import org.koin.androidx.compose.koinViewModel
 import kotlin.random.Random
 
@@ -38,9 +41,18 @@ fun DashboardScreen(
         mutableStateOf(emptyList())
     }
 
+    val context = LocalContext.current
+
     LaunchedEffect(Unit) {
         list = viewModel.load()
-        release = viewModel.queryReleases()
+        runCatching {
+            release = viewModel.queryReleases()
+        }.onFailure { err ->
+            err.printStackTrace()
+            withContext(Dispatchers.Main) {
+                context.toast(err.message)
+            }
+        }
     }
 
     LazyColumn(modifier) {
