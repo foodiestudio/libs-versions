@@ -1,4 +1,4 @@
-package com.example.app
+package com.example.app.photo
 
 import androidx.compose.animation.core.animateDp
 import androidx.compose.animation.core.updateTransition

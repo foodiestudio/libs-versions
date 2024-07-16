@@ -4,6 +4,13 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.ksp)
     alias(libs.plugins.sqldelight)
+    alias(libs.plugins.kotlinx.serialization)
+}
+
+sqldelight {
+    database("AppDatabase") {
+        packageName = "com.example.app.database"
+    }
 }
 
 android {
@@ -62,6 +69,11 @@ dependencies {
     implementation(libs.bundles.accompanist)
 
     implementation(libs.bundles.internal)
+    implementation(libs.sql)
+    implementation(libs.retrofit.converter.moshi)
+
+    implementation(libs.retrofit.converter.kotlinx)
+    implementation(libs.kotlinx.json)
 
     debugImplementation(libs.bundles.debug)
     testImplementation(libs.junit)
