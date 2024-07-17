@@ -59,6 +59,9 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
     }
+
+    // In the app build.gradle.kts file:
+    assetPacks += listOf(":foo")
 }
 
 // > ./gradlew dependencies | grep "releaseCompileClasspath"
@@ -87,4 +90,6 @@ dependencies {
     debugImplementation(libs.bundles.debug)
     testImplementation(libs.junit)
     androidTestImplementation(libs.bundles.android.tests)
+
+    implementation("com.google.android.play:asset-delivery-ktx:2.2.2")
 }

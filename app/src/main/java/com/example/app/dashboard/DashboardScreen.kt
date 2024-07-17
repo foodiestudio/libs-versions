@@ -12,6 +12,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -23,6 +24,7 @@ import com.example.app.datasource.GithubRelease
 import com.github.foodiestudio.application.theme.AppTheme
 import com.github.foodiestudio.sugar.notification.toast
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.androidx.compose.koinViewModel
 import kotlin.random.Random
@@ -42,6 +44,13 @@ fun DashboardScreen(
     }
 
     val context = LocalContext.current
+
+    val scope = rememberCoroutineScope()
+
+    var statusCode by remember {
+        mutableStateOf(-1)
+    }
+
 
     LaunchedEffect(Unit) {
         list = viewModel.load()
@@ -88,6 +97,18 @@ fun DashboardScreen(
                         Text("Download count: ${item.downloadCount}")
                     }
                 }
+            }
+        }
+
+        item {
+            Button(onClick = {
+                scope.launch {
+                    viewModel.checkIsDownloaded(context)?.let {
+                        statusCode = it.status()
+                    }
+                }
+            }) {
+                Text("check asset status: $statusCode")
             }
         }
     }

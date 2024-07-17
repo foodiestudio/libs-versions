@@ -18,3 +18,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "libs-versions"
 include(":app")
+// play asset delivery test
+include(":foo")
