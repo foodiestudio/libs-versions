@@ -61,7 +61,7 @@ android {
     }
 
     // In the app build.gradle.kts file:
-    assetPacks += listOf(":foo")
+    assetPacks += listOf(":foo", ":haha")
 }
 
 // > ./gradlew dependencies | grep "releaseCompileClasspath"
@@ -91,5 +91,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.bundles.android.tests)
 
+    //noinspection UseTomlInstead
     implementation("com.google.android.play:asset-delivery-ktx:2.2.2")
 }

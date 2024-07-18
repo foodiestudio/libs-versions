@@ -23,9 +23,12 @@ import com.example.app.database.HockeyPlayer
 import com.example.app.datasource.GithubRelease
 import com.github.foodiestudio.application.theme.AppTheme
 import com.github.foodiestudio.sugar.notification.toast
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import logcat.asLog
+import logcat.logcat
 import org.koin.androidx.compose.koinViewModel
 import kotlin.random.Random
 
@@ -103,12 +106,36 @@ fun DashboardScreen(
         item {
             Button(onClick = {
                 scope.launch {
-                    viewModel.checkIsDownloaded(context)?.let {
-                        statusCode = it.status()
+                    runCatching {
+                        viewModel.checkIsDownloaded(context)?.let {
+                            statusCode = it.status()
+                        }
+                    }.onFailure {
+                        if (it is CancellationException) {
+                            throw it
+                        }
+                        logcat { it.asLog() }
                     }
                 }
             }) {
                 Text("check asset status: $statusCode")
+            }
+        }
+
+        item {
+            Button(onClick = {
+                runCatching {
+                    viewModel.loadAssetContent(context)
+                }.onSuccess {
+                    context.toast(it)
+                }.onFailure {
+                    if (it is CancellationException) {
+                        throw it
+                    }
+                    logcat { it.asLog() }
+                }
+            }) {
+                Text("read install asset")
             }
         }
     }
