@@ -19,3 +19,8 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Play Asset Delivery
+-dontwarn com.google.android.gms.common.annotation.NoNullnessRewrite
+# Missing class com.google.errorprone.annotations.MustBeClosed (referenced from: androidx.test.platform.tracing.Tracer$Span androidx.test.platform.tracing.Tracer$Span.beginChildSpan(java.lang.String) and 2 other contexts)
+-dontwarn com.google.errorprone.annotations.MustBeClosed
