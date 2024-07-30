@@ -12,15 +12,15 @@ sqldelight = "1.5.5"
 
 # compose
 # https://developer.android.com/jetpack/compose/bom/bom-mapping
-compose-bom = "2023.09.01" # compose 1.5.1
+compose-bom = "2023.09.02" # compose 1.5.2
 # https://developer.android.google.cn/jetpack/androidx/releases/compose-kotlin
-compose-compiler = "1.5.1"
+compose-compiler = "1.5.2"
 # https://google.github.io/accompanist/
 accompanist = "0.32.0"
 # https://developer.android.com/jetpack/androidx/releases/activity
 activity-compose = "1.8.2"
 # https://developer.android.com/jetpack/androidx/releases/navigation
-navigation-compose = "2.7.1"
+navigation-compose = "2.7.7"
 
 # jetpack
 # https://developer.android.com/jetpack/androidx/releases/lifecycle
