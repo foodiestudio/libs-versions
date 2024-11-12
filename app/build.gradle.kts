@@ -7,6 +7,8 @@ plugins {
     alias(libs.plugins.kotlinx.serialization)
 }
 
+apply<DepAnalysisPlugin>()
+
 sqldelight {
     database("AppDatabase") {
         packageName = "com.example.app.database"

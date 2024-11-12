@@ -17,3 +17,18 @@
 2. 确定 Kotlin 版本，不一定要升级，一旦升级的话，对应的版本都要改动，Kotlin 版本必须一致
    a. Kotlin 版本只考虑 .0 和 .10 版本
 3. 一些三方库单独的升级
+4. 执行脚本进行验证
+
+### 脚本使用
+
+更新当前的校验规则，然后再执行检查
+
+```shell
+./gradlew -q :app:validateDeps
+```
+
+确认所有检查通过后，执行导出快照，作为下一个版本的参考
+
+```shell
+./gradlew -q :app:dumpDepsSnapshot
+```
