@@ -6,6 +6,7 @@ import org.gradle.api.provider.Property
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.InputFile
 import org.gradle.api.tasks.TaskAction
+import org.gradle.api.tasks.options.Option
 import org.gradle.kotlin.dsl.getByType
 
 /**
@@ -13,14 +14,15 @@ import org.gradle.kotlin.dsl.getByType
  */
 abstract class ValidateDepsTask : DefaultTask() {
 
+//    @get:Option(option = "kotlin", description = "target Kotlin version")
 //    @get:Input
 //    abstract val kotlinVersion: Property<String>
 
 //    @get:Input
 //    abstract val composeVersion: Property<String>
 //
-//    @get:InputFile
-//    abstract val baselineFile: RegularFileProperty
+    @get:InputFile
+    abstract val baselineFile: RegularFileProperty
 
     /**
      * check current version is match with old version
