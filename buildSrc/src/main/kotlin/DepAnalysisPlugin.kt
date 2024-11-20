@@ -8,9 +8,9 @@ import org.gradle.kotlin.dsl.register
 class DepAnalysisPlugin : Plugin<Project> {
 
     override fun apply(target: Project) {
-        val dumpTaskProvider = target.tasks.register<DumpSnapshotTask>("snapshotDependencies") {
+        target.tasks.register<DumpSnapshotTask>("snapshotDependencies") {
             group = GROUP
-            snapshotFolder.convention(target.layout.projectDirectory.dir("analytics"))
+            snapshotFolder.set(target.layout.projectDirectory.dir("analytics"))
             description = "Dump snapshot dependencies to analytics folder"
         }
 
@@ -48,7 +48,7 @@ class DepAnalysisPlugin : Plugin<Project> {
         target.tasks.register<ValidateDependenciesTask>("validateDependencies") {
             group = GROUP
             dependsOn(validateLint, validateKsp)
-            snapshotFolder.set(dumpTaskProvider.flatMap { it.snapshotFolder })
+            snapshotFolder.set(target.layout.projectDirectory.dir("analytics"))
             description = "Validate dependencies if you are not making a breaking change"
         }
     }
