@@ -24,11 +24,11 @@
 更新当前的校验规则，然后再执行检查
 
 ```shell
-./gradlew -q :app:validateDeps
+./gradlew -q :app:validateDependencies
 ```
 
 确认所有检查通过后，执行导出快照，作为下一个版本的参考
 
 ```shell
-./gradlew -q :app:dumpDepsSnapshot
+./gradlew -q :app:snapshotDependencies
 ```
