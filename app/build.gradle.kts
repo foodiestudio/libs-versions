@@ -89,6 +89,8 @@ dependencies {
     implementation(libs.retrofit.converter.kotlinx)
     implementation(libs.kotlinx.json)
 
+    implementation(libs.androidx.lifecycle.service)
+
     debugImplementation(libs.bundles.debug)
     testImplementation(libs.junit)
     androidTestImplementation(libs.bundles.android.tests)
