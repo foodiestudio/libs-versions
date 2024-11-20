@@ -7,6 +7,8 @@ plugins {
     alias(libs.plugins.kotlinx.serialization)
 }
 
+apply<DepAnalysisPlugin>()
+
 sqldelight {
     database("AppDatabase") {
         packageName = "com.example.app.database"
@@ -86,6 +88,8 @@ dependencies {
 
     implementation(libs.retrofit.converter.kotlinx)
     implementation(libs.kotlinx.json)
+
+    implementation(libs.androidx.lifecycle.service)
 
     debugImplementation(libs.bundles.debug)
     testImplementation(libs.junit)
