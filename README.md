@@ -16,10 +16,10 @@
    b. 调整 compose-compiler 版本
 2. 确定 Kotlin 版本，不一定要升级，一旦升级的话，对应的版本都要改动，Kotlin 版本必须一致
    a. Kotlin 版本只考虑 .0 和 .10 版本
-3. 一些三方库单独的升级
-4. 执行脚本进行验证
+3. 执行脚本进行验证
    a. 如果需要升级 compose 版本或者 kotlin 版本，需先更新下 `snapshotDependencies` 的结果
    b. 然后再检查 can_upgrade 的结果，尝试升级，并执行 `validateDependencies` 来确保没有问题。
+4. 一些三方库单独的升级
 5. 最后跑一下 debug app 来确保没有问题
 
 ### 脚本使用

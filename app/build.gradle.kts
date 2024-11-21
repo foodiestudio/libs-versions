@@ -10,8 +10,10 @@ plugins {
 apply<DepAnalysisPlugin>()
 
 sqldelight {
-    database("AppDatabase") {
-        packageName = "com.example.app.database"
+    databases {
+        create("AppDatabase") {
+            packageName.set("com.example.app.database")
+        }
     }
 }
 

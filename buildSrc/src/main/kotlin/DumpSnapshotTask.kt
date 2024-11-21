@@ -3,6 +3,8 @@ import kotlinx.serialization.json.Json
 import org.gradle.api.DefaultTask
 import org.gradle.api.artifacts.result.ResolvedDependencyResult
 import org.gradle.api.file.DirectoryProperty
+import org.gradle.api.file.RegularFileProperty
+import org.gradle.api.tasks.InputFile
 import org.gradle.api.tasks.OutputDirectory
 import org.gradle.api.tasks.TaskAction
 
@@ -15,6 +17,9 @@ abstract class DumpSnapshotTask : DefaultTask() {
 
     @get:OutputDirectory
     abstract val snapshotFolder: DirectoryProperty
+
+    @get:InputFile
+    abstract val versionCatalog: RegularFileProperty
 
     @TaskAction
     fun run() {

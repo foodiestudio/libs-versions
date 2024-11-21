@@ -5,8 +5,10 @@ import org.gradle.api.GradleException
 import org.gradle.api.artifacts.VersionCatalogsExtension
 import org.gradle.api.artifacts.result.ResolvedDependencyResult
 import org.gradle.api.file.DirectoryProperty
+import org.gradle.api.file.RegularFileProperty
 import org.gradle.api.logging.LogLevel
 import org.gradle.api.tasks.InputDirectory
+import org.gradle.api.tasks.InputFile
 import org.gradle.api.tasks.TaskAction
 import org.gradle.kotlin.dsl.getByType
 
@@ -15,6 +17,9 @@ abstract class ValidateDependenciesTask : DefaultTask() {
     private val json = Json { ignoreUnknownKeys = true }
 
     @get:InputDirectory abstract val snapshotFolder: DirectoryProperty
+
+    @get:InputFile
+    abstract val versionCatalog: RegularFileProperty
 
     @TaskAction
     fun execute() {
