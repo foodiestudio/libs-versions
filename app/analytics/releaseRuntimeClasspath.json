@@ -1,13 +1,25 @@
 [
     {
-        "group": "com.squareup.sqldelight",
+        "group": "app.cash.sqldelight",
+        "name": "runtime",
+        "versions": [
+            {
+                "version": "2.0.0",
+                "from": [
+                    "project :app",
+                    "app.cash.sqldelight:android-driver:2.0.0"
+                ]
+            }
+        ]
+    },
+    {
+        "group": "app.cash.sqldelight",
         "name": "runtime-jvm",
         "versions": [
             {
-                "version": "1.5.5",
+                "version": "2.0.0",
                 "from": [
-                    "project :app",
-                    "com.squareup.sqldelight:android-driver:1.5.5"
+                    "app.cash.sqldelight:runtime:2.0.0"
                 ]
             }
         ]
@@ -19,12 +31,12 @@
             {
                 "version": "1.9.10",
                 "from": [
-                    "com.squareup.sqldelight:runtime-jvm:1.5.5",
+                    "app.cash.sqldelight:runtime-jvm:2.0.0",
                     "project :app",
-                    "com.squareup.okio:okio-jvm:3.5.0",
-                    "com.squareup.okhttp3:okhttp:4.11.0",
+                    "com.squareup.okio:okio-jvm:3.6.0",
+                    "com.squareup.okhttp3:okhttp:4.12.0",
                     "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0",
-                    "com.squareup.okhttp3:logging-interceptor:4.11.0",
+                    "com.squareup.okhttp3:logging-interceptor:4.12.0",
                     "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1",
                     "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1",
                     "com.google.accompanist:accompanist-drawablepainter:0.30.1",
@@ -43,7 +55,7 @@
                     "com.google.accompanist:accompanist-adaptive:0.32.0",
                     "com.google.accompanist:accompanist-testharness:0.32.0",
                     "com.google.accompanist:accompanist-placeholder:0.32.0",
-                    "com.squareup.sqldelight:android-driver:1.5.5"
+                    "app.cash.sqldelight:android-driver:2.0.0"
                 ]
             }
         ]
@@ -57,7 +69,6 @@
                 "from": [
                     "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10",
                     "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.10",
-                    "com.squareup.okhttp3:okhttp:4.11.0",
                     "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.6.0",
                     "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.6.0",
                     "androidx.annotation:annotation-jvm:1.8.0",
@@ -67,17 +78,18 @@
                     "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
-                    "androidx.annotation:annotation-experimental:1.3.0",
+                    "androidx.annotation:annotation-experimental:1.4.0",
                     "androidx.compose.runtime:runtime-android:1.5.3",
-                    "androidx.core:core-ktx:1.10.0",
+                    "androidx.core:core:1.13.0",
+                    "androidx.core:core-ktx:1.13.0",
                     "androidx.savedstate:savedstate:1.2.1",
                     "androidx.savedstate:savedstate-ktx:1.2.1",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.activity:activity:1.8.2",
+                    "androidx.activity:activity:1.9.3",
                     "androidx.compose.runtime:runtime-saveable-android:1.5.3",
-                    "androidx.activity:activity-compose:1.8.2",
-                    "androidx.activity:activity-ktx:1.8.2",
+                    "androidx.activity:activity-compose:1.9.3",
+                    "androidx.activity:activity-ktx:1.9.3",
                     "androidx.compose.ui:ui-util-android:1.5.3",
                     "androidx.compose.ui:ui-unit-android:1.5.3",
                     "androidx.compose.ui:ui-text-android:1.5.3",
@@ -104,7 +116,9 @@
                     "androidx.navigation:navigation-runtime:2.7.7",
                     "androidx.navigation:navigation-compose:2.7.7",
                     "io.github.aakira:napier-android:1.4.1",
-                    "androidx.window:window:1.0.0"
+                    "androidx.window:window:1.0.0",
+                    "androidx.sqlite:sqlite:2.3.1",
+                    "androidx.sqlite:sqlite-framework:2.3.1"
                 ]
             }
         ]
@@ -117,8 +131,8 @@
                 "version": "1.9.10",
                 "from": [
                     "org.jetbrains.kotlin:kotlin-stdlib:1.9.10",
-                    "com.squareup.sqldelight:runtime-jvm:1.5.5",
-                    "com.squareup.okio:okio-jvm:3.5.0",
+                    "app.cash.sqldelight:runtime-jvm:2.0.0",
+                    "com.squareup.okio:okio-jvm:3.6.0",
                     "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.6.0",
                     "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.6.0",
                     "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1",
@@ -190,11 +204,11 @@
         "name": "okhttp",
         "versions": [
             {
-                "version": "4.11.0",
+                "version": "4.12.0",
                 "from": [
                     "com.squareup.retrofit2:retrofit:2.9.0",
-                    "com.squareup.okhttp3:logging-interceptor:4.11.0",
-                    "com.squareup.okhttp3:okhttp-bom:4.11.0",
+                    "com.squareup.okhttp3:logging-interceptor:4.12.0",
+                    "com.squareup.okhttp3:okhttp-bom:4.12.0",
                     "io.coil-kt:coil-base:2.4.0"
                 ]
             }
@@ -205,9 +219,9 @@
         "name": "okio",
         "versions": [
             {
-                "version": "3.5.0",
+                "version": "3.6.0",
                 "from": [
-                    "com.squareup.okhttp3:okhttp:4.11.0",
+                    "com.squareup.okhttp3:okhttp:4.12.0",
                     "io.coil-kt:coil-base:2.4.0",
                     "project :app",
                     "com.squareup.moshi:moshi:1.8.0"
@@ -220,9 +234,9 @@
         "name": "okio-jvm",
         "versions": [
             {
-                "version": "3.5.0",
+                "version": "3.6.0",
                 "from": [
-                    "com.squareup.okio:okio:3.5.0"
+                    "com.squareup.okio:okio:3.6.0"
                 ]
             }
         ]
@@ -310,10 +324,10 @@
         "name": "logging-interceptor",
         "versions": [
             {
-                "version": "4.11.0",
+                "version": "4.12.0",
                 "from": [
                     "project :app",
-                    "com.squareup.okhttp3:okhttp-bom:4.11.0"
+                    "com.squareup.okhttp3:okhttp-bom:4.12.0"
                 ]
             }
         ]
@@ -351,13 +365,13 @@
                     "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.compose.runtime:runtime-android:1.5.3",
-                    "androidx.activity:activity:1.8.2",
+                    "androidx.activity:activity:1.9.3",
                     "androidx.collection:collection:1.2.0",
-                    "androidx.core:core:1.10.0",
+                    "androidx.core:core:1.13.0",
                     "androidx.concurrent:concurrent-futures:1.1.0",
                     "androidx.interpolator:interpolator:1.0.0",
                     "androidx.versionedparcelable:versionedparcelable:1.1.1",
-                    "androidx.core:core-ktx:1.10.0",
+                    "androidx.core:core-ktx:1.13.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.savedstate:savedstate:1.2.1",
                     "androidx.profileinstaller:profileinstaller:1.3.1",
@@ -390,8 +404,8 @@
                     "androidx.compose.material:material-android:1.5.3",
                     "androidx.navigation:navigation-common:2.7.7",
                     "androidx.window:window:1.0.0",
-                    "androidx.sqlite:sqlite:2.1.0",
-                    "androidx.sqlite:sqlite-framework:2.1.0"
+                    "androidx.sqlite:sqlite-framework:2.3.1",
+                    "androidx.sqlite:sqlite:2.3.1"
                 ]
             }
         ]
@@ -416,7 +430,7 @@
                 "version": "1.0.0",
                 "from": [
                     "androidx.startup:startup-runtime:1.1.1",
-                    "androidx.activity:activity:1.8.2"
+                    "androidx.activity:activity:1.9.3"
                 ]
             }
         ]
@@ -434,7 +448,7 @@
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.activity:activity-ktx:1.8.2",
+                    "androidx.activity:activity-ktx:1.9.3",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
@@ -461,8 +475,8 @@
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
-                    "androidx.core:core:1.10.0",
-                    "androidx.activity:activity:1.8.2",
+                    "androidx.core:core:1.13.0",
+                    "androidx.activity:activity:1.9.3",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
                     "androidx.compose.ui:ui-android:1.5.3",
@@ -775,12 +789,12 @@
                 "version": "2.7.0",
                 "from": [
                     "androidx.lifecycle:lifecycle-service:2.7.0",
-                    "androidx.activity:activity:1.8.2",
+                    "androidx.activity:activity:1.9.3",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.activity:activity-compose:1.8.2",
+                    "androidx.activity:activity-compose:1.9.3",
                     "androidx.compose.ui:ui-android:1.5.3",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-process:2.7.0",
@@ -829,10 +843,10 @@
         "name": "annotation-experimental",
         "versions": [
             {
-                "version": "1.3.0",
+                "version": "1.4.0",
                 "from": [
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
-                    "androidx.core:core:1.10.0",
+                    "androidx.core:core:1.13.0",
                     "androidx.fragment:fragment:1.6.1",
                     "androidx.navigation:navigation-runtime:2.7.7"
                 ]
@@ -848,7 +862,7 @@
                 "from": [
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.compose.runtime:runtime-livedata:1.5.3",
-                    "androidx.activity:activity-compose:1.8.2",
+                    "androidx.activity:activity-compose:1.9.3",
                     "androidx.compose.runtime:runtime-saveable-android:1.5.3",
                     "androidx.compose.runtime:runtime-saveable-android:1.5.3",
                     "androidx.compose.ui:ui-android:1.5.3",
@@ -908,7 +922,7 @@
                 "version": "1.5.3",
                 "from": [
                     "androidx.compose.runtime:runtime-livedata:1.5.3",
-                    "androidx.activity:activity-compose:1.8.2",
+                    "androidx.activity:activity-compose:1.9.3",
                     "androidx.compose.ui:ui-util-android:1.5.3",
                     "androidx.compose.ui:ui-unit-android:1.5.3",
                     "androidx.compose.ui:ui-text-android:1.5.3",
@@ -949,12 +963,12 @@
         "name": "activity-ktx",
         "versions": [
             {
-                "version": "1.8.2",
+                "version": "1.9.3",
                 "from": [
                     "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.activity:activity-compose:1.8.2",
-                    "androidx.activity:activity-compose:1.8.2",
-                    "androidx.activity:activity:1.8.2",
+                    "androidx.activity:activity-compose:1.9.3",
+                    "androidx.activity:activity-compose:1.9.3",
+                    "androidx.activity:activity:1.9.3",
                     "androidx.fragment:fragment-ktx:1.6.1",
                     "io.insert-koin:koin-android:3.5.0",
                     "androidx.navigation:navigation-runtime:2.7.7"
@@ -967,11 +981,11 @@
         "name": "activity",
         "versions": [
             {
-                "version": "1.8.2",
+                "version": "1.9.3",
                 "from": [
-                    "androidx.activity:activity-ktx:1.8.2",
-                    "androidx.activity:activity-compose:1.8.2",
-                    "androidx.activity:activity-ktx:1.8.2",
+                    "androidx.activity:activity-ktx:1.9.3",
+                    "androidx.activity:activity-compose:1.9.3",
+                    "androidx.activity:activity-ktx:1.9.3",
                     "androidx.appcompat:appcompat:1.6.1",
                     "androidx.fragment:fragment:1.6.1"
                 ]
@@ -985,8 +999,8 @@
             {
                 "version": "1.2.0",
                 "from": [
-                    "androidx.activity:activity:1.8.2",
-                    "androidx.core:core:1.10.0",
+                    "androidx.activity:activity:1.9.3",
+                    "androidx.core:core:1.13.0",
                     "androidx.versionedparcelable:versionedparcelable:1.1.1",
                     "androidx.compose.ui:ui-android:1.5.3",
                     "androidx.compose.ui:ui-text-android:1.5.3",
@@ -1011,11 +1025,11 @@
         "name": "core",
         "versions": [
             {
-                "version": "1.10.0",
+                "version": "1.13.0",
                 "from": [
-                    "androidx.activity:activity:1.8.2",
-                    "androidx.core:core-ktx:1.10.0",
-                    "androidx.core:core-ktx:1.10.0",
+                    "androidx.activity:activity:1.9.3",
+                    "androidx.core:core-ktx:1.13.0",
+                    "androidx.core:core-ktx:1.13.0",
                     "androidx.autofill:autofill:1.0.0",
                     "androidx.compose.ui:ui-text-android:1.5.3",
                     "androidx.emoji2:emoji2:1.4.0",
@@ -1044,7 +1058,7 @@
             {
                 "version": "1.1.0",
                 "from": [
-                    "androidx.core:core:1.10.0",
+                    "androidx.core:core:1.13.0",
                     "androidx.profileinstaller:profileinstaller:1.3.1"
                 ]
             }
@@ -1070,7 +1084,7 @@
             {
                 "version": "1.0.0",
                 "from": [
-                    "androidx.core:core:1.10.0",
+                    "androidx.core:core:1.13.0",
                     "androidx.vectordrawable:vectordrawable-animated:1.1.0"
                 ]
             }
@@ -1083,7 +1097,7 @@
             {
                 "version": "1.1.1",
                 "from": [
-                    "androidx.core:core:1.10.0"
+                    "androidx.core:core:1.13.0"
                 ]
             }
         ]
@@ -1093,11 +1107,11 @@
         "name": "core-ktx",
         "versions": [
             {
-                "version": "1.10.0",
+                "version": "1.13.0",
                 "from": [
-                    "androidx.core:core:1.10.0",
+                    "androidx.core:core:1.13.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
-                    "androidx.activity:activity-ktx:1.8.2",
+                    "androidx.activity:activity-ktx:1.9.3",
                     "androidx.customview:customview-poolingcontainer:1.0.0",
                     "io.coil-kt:coil-compose-base:2.4.0",
                     "androidx.appcompat:appcompat:1.6.1",
@@ -1118,7 +1132,7 @@
             {
                 "version": "2.7.0",
                 "from": [
-                    "androidx.activity:activity:1.8.2",
+                    "androidx.activity:activity:1.9.3",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
@@ -1148,7 +1162,7 @@
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.savedstate:savedstate-ktx:1.2.1",
                     "androidx.savedstate:savedstate-ktx:1.2.1",
-                    "androidx.activity:activity:1.8.2",
+                    "androidx.activity:activity:1.9.3",
                     "androidx.fragment:fragment:1.6.1",
                     "androidx.appcompat:appcompat:1.6.1",
                     "androidx.compose.material:material-android:1.5.3"
@@ -1164,7 +1178,7 @@
                 "version": "1.2.1",
                 "from": [
                     "androidx.savedstate:savedstate:1.2.1",
-                    "androidx.activity:activity-ktx:1.8.2",
+                    "androidx.activity:activity-ktx:1.9.3",
                     "androidx.compose.ui:ui-android:1.5.3",
                     "androidx.fragment:fragment-ktx:1.6.1",
                     "androidx.navigation:navigation-common:2.7.7"
@@ -1180,7 +1194,7 @@
                 "version": "2.7.0",
                 "from": [
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
-                    "androidx.activity:activity-ktx:1.8.2",
+                    "androidx.activity:activity-ktx:1.9.3",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
@@ -1208,7 +1222,7 @@
             {
                 "version": "1.3.1",
                 "from": [
-                    "androidx.activity:activity:1.8.2",
+                    "androidx.activity:activity:1.9.3",
                     "androidx.compose.ui:ui-android:1.5.3",
                     "androidx.lifecycle:lifecycle-runtime:2.7.0",
                     "androidx.fragment:fragment:1.6.1",
@@ -1223,10 +1237,10 @@
         "name": "activity-compose",
         "versions": [
             {
-                "version": "1.8.2",
+                "version": "1.9.3",
                 "from": [
-                    "androidx.activity:activity:1.8.2",
-                    "androidx.activity:activity-ktx:1.8.2",
+                    "androidx.activity:activity:1.9.3",
+                    "androidx.activity:activity-ktx:1.9.3",
                     "project :app",
                     "androidx.navigation:navigation-compose:2.7.7",
                     "com.google.accompanist:accompanist-permissions:0.32.0"
@@ -1241,7 +1255,7 @@
             {
                 "version": "1.5.3",
                 "from": [
-                    "androidx.activity:activity-compose:1.8.2",
+                    "androidx.activity:activity-compose:1.9.3",
                     "androidx.compose.ui:ui-android:1.5.3",
                     "androidx.compose.ui:ui-text-android:1.5.3",
                     "androidx.compose.runtime:runtime-livedata:1.5.3",
@@ -1676,7 +1690,7 @@
         "name": "okhttp-bom",
         "versions": [
             {
-                "version": "4.11.0",
+                "version": "4.12.0",
                 "from": [
                     "project :app"
                 ]
@@ -2402,26 +2416,13 @@
         ]
     },
     {
-        "group": "com.squareup.sqldelight",
+        "group": "app.cash.sqldelight",
         "name": "android-driver",
         "versions": [
             {
-                "version": "1.5.5",
+                "version": "2.0.0",
                 "from": [
                     "project :app"
-                ]
-            }
-        ]
-    },
-    {
-        "group": "androidx.sqlite",
-        "name": "sqlite",
-        "versions": [
-            {
-                "version": "2.1.0",
-                "from": [
-                    "com.squareup.sqldelight:android-driver:1.5.5",
-                    "androidx.sqlite:sqlite-framework:2.1.0"
                 ]
             }
         ]
@@ -2431,9 +2432,22 @@
         "name": "sqlite-framework",
         "versions": [
             {
-                "version": "2.1.0",
+                "version": "2.3.1",
                 "from": [
-                    "com.squareup.sqldelight:android-driver:1.5.5"
+                    "app.cash.sqldelight:android-driver:2.0.0"
+                ]
+            }
+        ]
+    },
+    {
+        "group": "androidx.sqlite",
+        "name": "sqlite",
+        "versions": [
+            {
+                "version": "2.3.1",
+                "from": [
+                    "androidx.sqlite:sqlite-framework:2.3.1",
+                    "app.cash.sqldelight:android-driver:2.0.0"
                 ]
             }
         ]
