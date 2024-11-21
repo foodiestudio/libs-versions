@@ -19,10 +19,10 @@ dependencyResolutionManagement {
 }
 ```
 
-```groovy
-// build.gradle (module)
+```kotlin
+// build.gradle.kts (module)
 dependencies {
-    // We can reference it in
-    implementation sharedLibs.ctc
+    implementation(platform(libs.compose.bom))
+    implementation(libs.bundles.jetpack)
 }
 ```
