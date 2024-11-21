@@ -11,6 +11,7 @@ class DepAnalysisPlugin : Plugin<Project> {
         target.tasks.register<DumpSnapshotTask>("snapshotDependencies") {
             group = GROUP
             snapshotFolder.set(target.layout.projectDirectory.dir("analytics"))
+            versionCatalog.set(target.layout.projectDirectory.file("../gradle/libs.versions.toml"))
             description = "Dump snapshot dependencies to analytics folder"
         }
 
@@ -49,6 +50,7 @@ class DepAnalysisPlugin : Plugin<Project> {
             group = GROUP
             dependsOn(validateLint, validateKsp)
             snapshotFolder.set(target.layout.projectDirectory.dir("analytics"))
+            versionCatalog.set(target.layout.projectDirectory.file("../gradle/libs.versions.toml"))
             description = "Validate dependencies if you are not making a breaking change"
         }
     }
