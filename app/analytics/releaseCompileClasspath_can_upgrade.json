@@ -553,13 +553,6 @@
         "upgradeVersion": "1.9.0"
     },
     {
-        "group": "com.squareup.okio",
-        "name": "okio",
-        "from": "com.github.foodiestudio:sugar:1.0.0",
-        "version": "3.4.0",
-        "upgradeVersion": "3.5.0"
-    },
-    {
         "group": "androidx.annotation",
         "name": "annotation",
         "from": "androidx.sqlite:sqlite:2.1.0",

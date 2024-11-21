@@ -82,7 +82,6 @@ dependencies {
     implementation(libs.bundles.jetpack.compose)
     implementation(libs.bundles.accompanist)
 
-    implementation(libs.bundles.internal)
     implementation(libs.sql)
     implementation(libs.retrofit.converter.moshi)
 

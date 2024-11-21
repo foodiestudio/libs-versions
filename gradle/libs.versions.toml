@@ -101,12 +101,6 @@ compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
 compose-livedata = { module = "androidx.compose.runtime:runtime-livedata" }
 compose-material-icons = { module = "androidx.compose.material:material-icons-extended" }
 
-# internal
-ctc = { module = "com.github.kkoshin:ctc", version.ref = "ctc" }
-sugar = { module = "com.github.foodiestudio:sugar", version.ref = "sugar" }
-theme = { module = "com.github.foodiestudio:app-theme", version.ref = "theme" }
-devtools = { module = "com.github.foodiestudio:devtools", version.ref = "devtools" }
-
 # other third-party
 logcat = { module = "com.squareup.logcat:logcat", version.ref = "logcat" }
 coil-bom = { module = "io.coil-kt:coil-bom", version.ref = "coil-bom" }
@@ -135,11 +129,10 @@ jetpack = ["startup", "lifecycle-ktx", "datastore", "datastore-preferences"]
 network = ["retrofit", "retrofit-converter-kotlinx", "okhttp-logging"]
 compose-core = ["compose-foundation", "compose-ui", "compose-material", "compose-material-icons", "compose-livedata"]
 jetpack-compose = ["activity-compose", "navigation-compose"]
-debug = ["compose-ui-tooling", "devtools"]
+debug = ["compose-ui-tooling"]
 unit-tests = ["junit"]
 android-tests = ["junit-android", "junit-compose", "espresso", "test-runner"]
 lint = ["lint-core", "lint-api", "lint-checks", "lint-tests"]
-internal = ["theme", "ctc", "sugar"]
 others = ["logcat", "koin", "coil", "mmkv", "okio"]
 accompanist = ["accompanist-systemuicontroller", "accompanist-navigation-material",
     "accompanist-navigation-animation", "accompanist-permissions", "accompanist-adaptive",

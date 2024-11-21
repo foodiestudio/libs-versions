@@ -43,7 +43,6 @@
                     "com.google.accompanist:accompanist-adaptive:0.32.0",
                     "com.google.accompanist:accompanist-testharness:0.32.0",
                     "com.google.accompanist:accompanist-placeholder:0.32.0",
-                    "com.github.foodiestudio:sugar:1.0.0",
                     "com.squareup.sqldelight:android-driver:1.5.5"
                 ]
             }
@@ -65,6 +64,7 @@
                     "androidx.lifecycle:lifecycle-common:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.annotation:annotation-experimental:1.3.0",
@@ -74,7 +74,6 @@
                     "androidx.savedstate:savedstate-ktx:1.2.1",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.activity:activity:1.8.2",
                     "androidx.compose.runtime:runtime-saveable-android:1.5.2",
                     "androidx.activity:activity-compose:1.8.2",
@@ -128,7 +127,6 @@
                     "androidx.compose.ui:ui-util-android:1.5.2",
                     "androidx.compose.ui:ui-unit-android:1.5.2",
                     "androidx.compose.ui:ui-text-android:1.5.2",
-                    "androidx.compose.ui:ui-tooling-preview-android:1.5.2",
                     "androidx.compose.ui:ui-graphics-android:1.5.2",
                     "androidx.compose.ui:ui-geometry-android:1.5.2",
                     "androidx.compose.ui:ui-android:1.5.2",
@@ -168,8 +166,6 @@
                 "version": "1.9.0",
                 "from": [
                     "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.0",
-                    "com.github.foodiestudio:app-theme:0.1.4-rc.1",
-                    "com.github.kkoshin:ctc:0.1.1",
                     "com.google.android.play:asset-delivery-ktx:2.2.2"
                 ]
             }
@@ -214,7 +210,6 @@
                     "com.squareup.okhttp3:okhttp:4.11.0",
                     "io.coil-kt:coil-base:2.4.0",
                     "project :app",
-                    "com.github.foodiestudio:sugar:1.0.0",
                     "com.squareup.moshi:moshi:1.8.0"
                 ]
             }
@@ -305,8 +300,6 @@
                 "version": "1.6.0",
                 "from": [
                     "org.jetbrains.kotlinx:kotlinx-serialization-bom:1.6.0",
-                    "com.github.foodiestudio:app-theme:0.1.4-rc.1",
-                    "com.github.kkoshin:ctc:0.1.1",
                     "project :app"
                 ]
             }
@@ -355,6 +348,7 @@
                     "androidx.arch.core:core-runtime:2.2.0",
                     "androidx.lifecycle:lifecycle-common:2.7.0",
                     "androidx.lifecycle:lifecycle-common-java8:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.compose.runtime:runtime-android:1.5.2",
                     "androidx.activity:activity:1.8.2",
@@ -366,7 +360,6 @@
                     "androidx.core:core-ktx:1.10.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.savedstate:savedstate:1.2.1",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.profileinstaller:profileinstaller:1.3.1",
                     "androidx.compose.runtime:runtime-saveable-android:1.5.2",
                     "androidx.compose.ui:ui-android:1.5.2",
@@ -375,7 +368,6 @@
                     "androidx.compose.ui:ui-unit-android:1.5.2",
                     "androidx.compose.ui:ui-text-android:1.5.2",
                     "androidx.emoji2:emoji2:1.4.0",
-                    "androidx.compose.ui:ui-tooling-preview-android:1.5.2",
                     "androidx.compose.foundation:foundation-android:1.5.2",
                     "androidx.compose.animation:animation-android:1.5.2",
                     "androidx.compose.animation:animation-core-android:1.5.2",
@@ -398,7 +390,6 @@
                     "androidx.compose.material:material-android:1.5.2",
                     "androidx.navigation:navigation-common:2.7.7",
                     "androidx.window:window:1.0.0",
-                    "androidx.documentfile:documentfile:1.0.1",
                     "androidx.sqlite:sqlite:2.1.0",
                     "androidx.sqlite:sqlite-framework:2.1.0"
                 ]
@@ -438,14 +429,14 @@
                 "version": "2.7.0",
                 "from": [
                     "project :app",
-                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.activity:activity-ktx:1.8.2",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
+                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
                     "androidx.lifecycle:lifecycle-common-java8:2.7.0",
@@ -465,7 +456,8 @@
                 "version": "2.7.0",
                 "from": [
                     "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
@@ -473,11 +465,10 @@
                     "androidx.activity:activity:1.8.2",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.compose.ui:ui-android:1.5.2",
                     "androidx.compose.runtime:runtime-livedata:1.5.2",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
+                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
                     "androidx.lifecycle:lifecycle-common-java8:2.7.0",
@@ -534,11 +525,11 @@
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.savedstate:savedstate:1.2.1",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
@@ -573,8 +564,6 @@
                     "androidx.window:window:1.0.0",
                     "com.google.accompanist:accompanist-testharness:0.32.0",
                     "com.google.accompanist:accompanist-placeholder:0.32.0",
-                    "com.github.foodiestudio:app-theme:0.1.4-rc.1",
-                    "com.github.kkoshin:ctc:0.1.1",
                     "com.google.android.play:asset-delivery-ktx:2.2.2"
                 ]
             }
@@ -597,8 +586,6 @@
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
                     "androidx.datastore:datastore:1.0.0",
                     "androidx.datastore:datastore-core:1.0.0",
-                    "com.github.foodiestudio:app-theme:0.1.4-rc.1",
-                    "com.github.kkoshin:ctc:0.1.1",
                     "com.google.android.play:asset-delivery-ktx:2.2.2"
                 ]
             }
@@ -640,9 +627,9 @@
                     "androidx.lifecycle:lifecycle-common:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
@@ -665,10 +652,10 @@
                     "androidx.lifecycle:lifecycle-common-java8:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.compose.runtime:runtime-livedata:1.5.2",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
@@ -690,10 +677,10 @@
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
@@ -715,9 +702,9 @@
                 "version": "2.7.0",
                 "from": [
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
@@ -734,24 +721,47 @@
     },
     {
         "group": "androidx.lifecycle",
-        "name": "lifecycle-service",
+        "name": "lifecycle-process",
         "versions": [
             {
                 "version": "2.7.0",
                 "from": [
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
+                    "androidx.emoji2:emoji2:1.4.0",
+                    "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
+                    "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
+                    "androidx.lifecycle:lifecycle-service:2.7.0",
+                    "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
+                    "androidx.lifecycle:lifecycle-livedata:2.7.0",
+                    "androidx.lifecycle:lifecycle-common-java8:2.7.0",
+                    "androidx.lifecycle:lifecycle-common:2.7.0",
+                    "androidx.lifecycle:lifecycle-runtime:2.7.0",
+                    "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0"
+                ]
+            }
+        ]
+    },
+    {
+        "group": "androidx.lifecycle",
+        "name": "lifecycle-service",
+        "versions": [
+            {
+                "version": "2.7.0",
+                "from": [
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
+                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
                     "androidx.lifecycle:lifecycle-common-java8:2.7.0",
                     "androidx.lifecycle:lifecycle-common:2.7.0",
                     "androidx.lifecycle:lifecycle-runtime:2.7.0",
                     "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0",
-                    "com.github.foodiestudio:sugar:1.0.0",
                     "project :app"
                 ]
             }
@@ -770,10 +780,10 @@
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.activity:activity-compose:1.8.2",
                     "androidx.compose.ui:ui-android:1.5.2",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
@@ -799,8 +809,8 @@
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
@@ -846,7 +856,6 @@
                     "androidx.compose.ui:ui-graphics-android:1.5.2",
                     "androidx.compose.ui:ui-unit-android:1.5.2",
                     "androidx.compose.ui:ui-text-android:1.5.2",
-                    "androidx.compose.ui:ui-tooling-preview-android:1.5.2",
                     "androidx.compose.animation:animation-core-android:1.5.2",
                     "androidx.compose.foundation:foundation-layout-android:1.5.2",
                     "androidx.compose.animation:animation-android:1.5.2",
@@ -903,7 +912,6 @@
                     "androidx.compose.ui:ui-util-android:1.5.2",
                     "androidx.compose.ui:ui-unit-android:1.5.2",
                     "androidx.compose.ui:ui-text-android:1.5.2",
-                    "androidx.compose.ui:ui-tooling-preview-android:1.5.2",
                     "androidx.compose.ui:ui-graphics-android:1.5.2",
                     "androidx.compose.ui:ui-geometry-android:1.5.2",
                     "androidx.compose.animation:animation-core-android:1.5.2",
@@ -918,10 +926,7 @@
                     "project :app",
                     "androidx.navigation:navigation-compose:2.7.7",
                     "com.google.accompanist:accompanist-systemuicontroller:0.32.0",
-                    "com.google.accompanist:accompanist-adaptive:0.32.0",
-                    "com.github.foodiestudio:app-theme:0.1.4-rc.1",
-                    "com.github.kkoshin:ctc:0.1.1",
-                    "com.github.foodiestudio:sugar:1.0.0"
+                    "com.google.accompanist:accompanist-adaptive:0.32.0"
                 ]
             }
         ]
@@ -952,9 +957,7 @@
                     "androidx.activity:activity:1.8.2",
                     "androidx.fragment:fragment-ktx:1.6.1",
                     "io.insert-koin:koin-android:3.5.0",
-                    "androidx.navigation:navigation-runtime:2.7.7",
-                    "com.github.foodiestudio:app-theme:0.1.4-rc.1",
-                    "com.github.kkoshin:ctc:0.1.1"
+                    "androidx.navigation:navigation-runtime:2.7.7"
                 ]
             }
         ]
@@ -1103,9 +1106,7 @@
                     "io.coil-kt:coil-base:2.4.0",
                     "androidx.navigation:navigation-common:2.7.7",
                     "com.google.accompanist:accompanist-systemuicontroller:0.32.0",
-                    "com.google.accompanist:accompanist-testharness:0.32.0",
-                    "com.github.foodiestudio:app-theme:0.1.4-rc.1",
-                    "com.github.kkoshin:ctc:0.1.1"
+                    "com.google.accompanist:accompanist-testharness:0.32.0"
                 ]
             }
         ]
@@ -1119,11 +1120,11 @@
                 "from": [
                     "androidx.activity:activity:1.8.2",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
@@ -1179,12 +1180,12 @@
                 "version": "2.7.0",
                 "from": [
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.activity:activity-ktx:1.8.2",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
@@ -1196,30 +1197,6 @@
                     "io.insert-koin:koin-android:3.5.0",
                     "androidx.navigation:navigation-common:2.7.7",
                     "androidx.navigation:navigation-runtime:2.7.7"
-                ]
-            }
-        ]
-    },
-    {
-        "group": "androidx.lifecycle",
-        "name": "lifecycle-process",
-        "versions": [
-            {
-                "version": "2.7.0",
-                "from": [
-                    "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
-                    "androidx.emoji2:emoji2:1.4.0",
-                    "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
-                    "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
-                    "androidx.lifecycle:lifecycle-service:2.7.0",
-                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
-                    "androidx.lifecycle:lifecycle-livedata:2.7.0",
-                    "androidx.lifecycle:lifecycle-common-java8:2.7.0",
-                    "androidx.lifecycle:lifecycle-common:2.7.0",
-                    "androidx.lifecycle:lifecycle-runtime:2.7.0",
-                    "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0"
                 ]
             }
         ]
@@ -1252,9 +1229,7 @@
                     "androidx.activity:activity-ktx:1.8.2",
                     "project :app",
                     "androidx.navigation:navigation-compose:2.7.7",
-                    "com.google.accompanist:accompanist-permissions:0.32.0",
-                    "com.github.foodiestudio:app-theme:0.1.4-rc.1",
-                    "com.github.kkoshin:ctc:0.1.1"
+                    "com.google.accompanist:accompanist-permissions:0.32.0"
                 ]
             }
         ]
@@ -1314,7 +1289,6 @@
                     "androidx.compose.ui:ui-unit-android:1.5.2",
                     "androidx.compose.ui:ui-unit-android:1.5.2",
                     "androidx.compose.ui:ui-text-android:1.5.2",
-                    "androidx.compose.ui:ui-tooling-preview-android:1.5.2",
                     "androidx.compose.ui:ui-graphics-android:1.5.2",
                     "androidx.compose.ui:ui-android:1.5.2",
                     "androidx.compose.animation:animation-android:1.5.2",
@@ -1346,7 +1320,6 @@
                     "androidx.compose.ui:ui-geometry-android:1.5.2",
                     "androidx.compose.ui:ui-unit-android:1.5.2",
                     "androidx.compose.ui:ui-text-android:1.5.2",
-                    "androidx.compose.ui:ui-tooling-preview-android:1.5.2",
                     "androidx.compose.ui:ui-text-android:1.5.2",
                     "androidx.compose.ui:ui-unit-android:1.5.2",
                     "androidx.compose.ui:ui-graphics-android:1.5.2",
@@ -1391,7 +1364,6 @@
                     "androidx.compose.ui:ui-unit-android:1.5.2",
                     "androidx.compose.ui:ui-text-android:1.5.2",
                     "androidx.compose.ui:ui-text-android:1.5.2",
-                    "androidx.compose.ui:ui-tooling-preview-android:1.5.2",
                     "androidx.compose.ui:ui-geometry-android:1.5.2",
                     "androidx.compose.ui:ui-android:1.5.2",
                     "androidx.compose.ui:ui-android:1.5.2",
@@ -1422,7 +1394,6 @@
                 "from": [
                     "androidx.compose.ui:ui-graphics-android:1.5.2",
                     "androidx.compose.ui:ui-text-android:1.5.2",
-                    "androidx.compose.ui:ui-tooling-preview-android:1.5.2",
                     "androidx.compose.ui:ui-text-android:1.5.2",
                     "androidx.compose.ui:ui-graphics-android:1.5.2",
                     "androidx.compose.ui:ui-util-android:1.5.2",
@@ -1456,7 +1427,6 @@
                 "version": "1.5.2",
                 "from": [
                     "androidx.compose.ui:ui-unit-android:1.5.2",
-                    "androidx.compose.ui:ui-tooling-preview-android:1.5.2",
                     "androidx.compose.ui:ui-graphics-android:1.5.2",
                     "androidx.compose.ui:ui-util-android:1.5.2",
                     "androidx.compose.ui:ui-geometry-android:1.5.2",
@@ -1513,39 +1483,6 @@
         ]
     },
     {
-        "group": "androidx.compose.ui",
-        "name": "ui-tooling-preview",
-        "versions": [
-            {
-                "version": "1.5.2",
-                "from": [
-                    "androidx.compose.ui:ui-text-android:1.5.2",
-                    "androidx.compose.ui:ui-unit-android:1.5.2",
-                    "androidx.compose.ui:ui-graphics-android:1.5.2",
-                    "androidx.compose.ui:ui-util-android:1.5.2",
-                    "androidx.compose.ui:ui-geometry-android:1.5.2",
-                    "androidx.compose.ui:ui-android:1.5.2",
-                    "androidx.compose:compose-bom:2023.09.02",
-                    "com.github.foodiestudio:app-theme:0.1.4-rc.1",
-                    "com.github.kkoshin:ctc:0.1.1"
-                ]
-            }
-        ]
-    },
-    {
-        "group": "androidx.compose.ui",
-        "name": "ui-tooling-preview-android",
-        "versions": [
-            {
-                "version": "1.5.2",
-                "from": [
-                    "androidx.compose.ui:ui-tooling-preview:1.5.2",
-                    "androidx.compose:compose-bom:2023.09.02"
-                ]
-            }
-        ]
-    },
-    {
         "group": "androidx.customview",
         "name": "customview-poolingcontainer",
         "versions": [
@@ -1576,8 +1513,7 @@
                     "com.google.accompanist:accompanist-permissions:0.32.0",
                     "com.google.accompanist:accompanist-adaptive:0.32.0",
                     "com.google.accompanist:accompanist-testharness:0.32.0",
-                    "com.google.accompanist:accompanist-placeholder:0.32.0",
-                    "com.github.foodiestudio:sugar:1.0.0"
+                    "com.google.accompanist:accompanist-placeholder:0.32.0"
                 ]
             }
         ]
@@ -2111,9 +2047,7 @@
             {
                 "version": "0.1",
                 "from": [
-                    "project :app",
-                    "com.github.foodiestudio:app-theme:0.1.4-rc.1",
-                    "com.github.kkoshin:ctc:0.1.1"
+                    "project :app"
                 ]
             }
         ]
@@ -2137,8 +2071,7 @@
             {
                 "version": "2023.09.02",
                 "from": [
-                    "project :app",
-                    "com.github.foodiestudio:sugar:1.0.0"
+                    "project :app"
                 ]
             }
         ]
@@ -2156,9 +2089,7 @@
                     "androidx.compose.material:material-ripple-android:1.5.2",
                     "project :app",
                     "com.google.accompanist:accompanist-navigation-material:0.32.0",
-                    "com.google.accompanist:accompanist-navigation-animation:0.32.0",
-                    "com.github.foodiestudio:app-theme:0.1.4-rc.1",
-                    "com.github.kkoshin:ctc:0.1.1"
+                    "com.google.accompanist:accompanist-navigation-animation:0.32.0"
                 ]
             }
         ]
@@ -2466,54 +2397,6 @@
                 "version": "0.32.0",
                 "from": [
                     "project :app"
-                ]
-            }
-        ]
-    },
-    {
-        "group": "com.github.foodiestudio",
-        "name": "app-theme",
-        "versions": [
-            {
-                "version": "0.1.4-rc.1",
-                "from": [
-                    "project :app"
-                ]
-            }
-        ]
-    },
-    {
-        "group": "com.github.kkoshin",
-        "name": "ctc",
-        "versions": [
-            {
-                "version": "0.1.1",
-                "from": [
-                    "project :app"
-                ]
-            }
-        ]
-    },
-    {
-        "group": "com.github.foodiestudio",
-        "name": "sugar",
-        "versions": [
-            {
-                "version": "1.0.0",
-                "from": [
-                    "project :app"
-                ]
-            }
-        ]
-    },
-    {
-        "group": "androidx.documentfile",
-        "name": "documentfile",
-        "versions": [
-            {
-                "version": "1.0.1",
-                "from": [
-                    "com.github.foodiestudio:sugar:1.0.0"
                 ]
             }
         ]
