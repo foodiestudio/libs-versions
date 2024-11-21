@@ -140,6 +140,13 @@
         "upgradeVersion": "1.9.0"
     },
     {
+        "group": "androidx.annotation",
+        "name": "annotation",
+        "from": "androidx.lifecycle:lifecycle-process:2.7.0",
+        "version": "1.2.0",
+        "upgradeVersion": "1.8.0"
+    },
+    {
         "group": "org.jetbrains.kotlin",
         "name": "kotlin-stdlib",
         "from": "androidx.lifecycle:lifecycle-service:2.7.0",
@@ -268,13 +275,6 @@
     {
         "group": "androidx.annotation",
         "name": "annotation",
-        "from": "androidx.lifecycle:lifecycle-process:2.7.0",
-        "version": "1.2.0",
-        "upgradeVersion": "1.8.0"
-    },
-    {
-        "group": "androidx.annotation",
-        "name": "annotation",
         "from": "androidx.profileinstaller:profileinstaller:1.3.1",
         "version": "1.2.0",
         "upgradeVersion": "1.8.0"
@@ -355,13 +355,6 @@
         "from": "androidx.emoji2:emoji2-views-helper:1.4.0",
         "version": "1.1.0",
         "upgradeVersion": "1.2.0"
-    },
-    {
-        "group": "androidx.annotation",
-        "name": "annotation",
-        "from": "androidx.compose.ui:ui-tooling-preview-android:1.5.2",
-        "version": "1.2.0",
-        "upgradeVersion": "1.8.0"
     },
     {
         "group": "androidx.core",
@@ -705,34 +698,6 @@
         "from": "com.google.accompanist:accompanist-placeholder:0.32.0",
         "version": "1.5.0",
         "upgradeVersion": "1.5.2"
-    },
-    {
-        "group": "org.jetbrains.kotlin",
-        "name": "kotlin-stdlib-jdk7",
-        "from": "com.github.foodiestudio:app-theme:0.1.4-rc.1",
-        "version": "1.5.31",
-        "upgradeVersion": "1.9.0"
-    },
-    {
-        "group": "org.jetbrains.kotlin",
-        "name": "kotlin-stdlib-jdk7",
-        "from": "com.github.kkoshin:ctc:0.1.1",
-        "version": "1.6.10",
-        "upgradeVersion": "1.9.0"
-    },
-    {
-        "group": "androidx.compose",
-        "name": "compose-bom",
-        "from": "com.github.foodiestudio:sugar:1.0.0",
-        "version": "2023.04.00",
-        "upgradeVersion": "2023.09.02"
-    },
-    {
-        "group": "androidx.annotation",
-        "name": "annotation",
-        "from": "androidx.documentfile:documentfile:1.0.1",
-        "version": "1.0.2",
-        "upgradeVersion": "1.8.0"
     },
     {
         "group": "androidx.annotation",
