@@ -119,6 +119,13 @@
         "upgradeVersion": "1.9.0"
     },
     {
+        "group": "org.jetbrains.kotlin",
+        "name": "kotlin-stdlib",
+        "from": "androidx.lifecycle:lifecycle-service:2.7.0",
+        "version": "1.8.22",
+        "upgradeVersion": "1.9.0"
+    },
+    {
         "group": "androidx.annotation",
         "name": "annotation",
         "from": "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
