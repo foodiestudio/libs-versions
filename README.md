@@ -35,3 +35,7 @@
 ```shell
 ./gradlew -q :app:snapshotDependencies
 ```
+
+
+### 补充
+- Android 14: 需要 Java 17
