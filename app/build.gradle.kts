@@ -98,5 +98,4 @@ dependencies {
 
     //noinspection UseTomlInstead
     implementation("com.google.android.play:asset-delivery-ktx:2.2.2")
-    implementation("com.github.foodiestudio:sugar:1.0.0")
 }
