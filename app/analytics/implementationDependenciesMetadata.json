@@ -59,7 +59,8 @@
                     "com.google.accompanist:accompanist-permissions:0.32.0",
                     "com.google.accompanist:accompanist-adaptive:0.32.0",
                     "com.google.accompanist:accompanist-testharness:0.32.0",
-                    "com.google.accompanist:accompanist-placeholder:0.32.0"
+                    "com.google.accompanist:accompanist-placeholder:0.32.0",
+                    "com.github.foodiestudio:sugar:1.0.1"
                 ]
             }
         ]
@@ -170,7 +171,8 @@
                     "com.squareup.okhttp3:okhttp:4.12.0",
                     "io.coil-kt:coil-base:2.5.0",
                     "project :app",
-                    "com.squareup.moshi:moshi:1.8.0"
+                    "com.squareup.moshi:moshi:1.8.0",
+                    "com.github.foodiestudio:sugar:1.0.1"
                 ]
             }
         ]
@@ -1806,6 +1808,18 @@
                 "from": [
                     "com.google.android.play:asset-delivery:2.2.2",
                     "com.google.android.play:asset-delivery-ktx:2.2.2"
+                ]
+            }
+        ]
+    },
+    {
+        "group": "com.github.foodiestudio",
+        "name": "sugar",
+        "versions": [
+            {
+                "version": "1.0.1",
+                "from": [
+                    "project :app"
                 ]
             }
         ]

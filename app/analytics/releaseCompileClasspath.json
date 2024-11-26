@@ -57,6 +57,7 @@
                     "com.google.accompanist:accompanist-testharness:0.32.0",
                     "com.google.accompanist:accompanist-placeholder:0.32.0",
                     "app.cash.sqldelight:android-driver:2.0.0",
+                    "com.github.foodiestudio:sugar:1.0.1",
                     "project :app"
                 ]
             }
@@ -197,6 +198,7 @@
                     "io.coil-kt:coil-base:2.5.0",
                     "project :app",
                     "com.squareup.moshi:moshi:1.8.0",
+                    "com.github.foodiestudio:sugar:1.0.1",
                     "project :app"
                 ]
             }
@@ -2273,6 +2275,19 @@
                 "from": [
                     "com.google.android.play:asset-delivery:2.2.2",
                     "com.google.android.play:asset-delivery-ktx:2.2.2",
+                    "project :app"
+                ]
+            }
+        ]
+    },
+    {
+        "group": "com.github.foodiestudio",
+        "name": "sugar",
+        "versions": [
+            {
+                "version": "1.0.1",
+                "from": [
+                    "project :app",
                     "project :app"
                 ]
             }
