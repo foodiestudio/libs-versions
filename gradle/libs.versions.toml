@@ -12,7 +12,7 @@ sqldelight = "2.0.0"
 
 # compose
 # https://developer.android.com/jetpack/compose/bom/bom-mapping
-compose-bom = "2023.10.00" # compose 1.5.3
+compose-bom = "2023.10.01" # compose 1.5.4
 # https://developer.android.google.cn/jetpack/androidx/releases/compose-kotlin
 compose-compiler = "1.5.3"
 # https://google.github.io/accompanist/
@@ -20,13 +20,13 @@ accompanist = "0.32.0" # support compose 1.5.x
 # https://developer.android.com/jetpack/androidx/releases/activity
 activity-compose = "1.9.3"
 # https://developer.android.com/jetpack/androidx/releases/navigation
-navigation-compose = "2.7.7"
+navigation-compose = "2.7.7" # next version require compose 1.7.0+
 # https://developer.android.com/jetpack/androidx/releases/lifecycle
-lifecycle = "2.7.0"
+lifecycle = "2.7.0" # next version require compose 1.6.0+
 # https://github.com/coil-kt/coil/blob/main/CHANGELOG.md
-coil-bom = "2.4.0"
+coil-bom = "2.5.0" # next version require compose 1.6.1+
 # https://github.com/InsertKoinIO/koin/blob/main/CHANGELOG.md
-koin-bom = "3.5.1"
+koin-bom = "3.5.1" # next version require kotlin 1.9.21
 
 # other third-party
 # https://developer.android.com/jetpack/androidx/releases/datastore
