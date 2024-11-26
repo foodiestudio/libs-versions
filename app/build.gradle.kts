@@ -25,7 +25,7 @@ android {
     defaultConfig {
         applicationId = "com.example.app"
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -98,5 +98,5 @@ dependencies {
 
     //noinspection UseTomlInstead
     implementation("com.google.android.play:asset-delivery-ktx:2.2.2")
-    implementation("com.github.foodiestudio:sugar:1.0.0")
+    implementation("com.github.foodiestudio:sugar:1.0.1")
 }

@@ -86,21 +86,21 @@
     {
         "group": "org.jetbrains.kotlin",
         "name": "kotlin-stdlib-common",
-        "from": "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1",
+        "from": "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3",
         "version": "1.8.20",
         "upgradeVersion": "1.9.10"
     },
     {
         "group": "org.jetbrains.kotlin",
         "name": "kotlin-stdlib-common",
-        "from": "org.jetbrains.kotlinx:atomicfu:0.20.2",
-        "version": "1.8.10",
+        "from": "org.jetbrains.kotlinx:atomicfu:0.21.0",
+        "version": "1.8.20",
         "upgradeVersion": "1.9.10"
     },
     {
         "group": "org.jetbrains.kotlin",
         "name": "kotlin-stdlib-jdk8",
-        "from": "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1",
+        "from": "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3",
         "version": "1.8.20",
         "upgradeVersion": "1.9.10"
     },
@@ -163,7 +163,7 @@
     {
         "group": "androidx.lifecycle",
         "name": "lifecycle-livedata",
-        "from": "androidx.compose.runtime:runtime-livedata:1.5.3",
+        "from": "androidx.compose.runtime:runtime-livedata:1.5.4",
         "version": "2.6.1",
         "upgradeVersion": "2.7.0"
     },
@@ -261,37 +261,16 @@
     {
         "group": "androidx.lifecycle",
         "name": "lifecycle-runtime",
-        "from": "io.coil-kt:coil-base:2.4.0",
-        "version": "2.6.1",
+        "from": "io.coil-kt:coil-base:2.5.0",
+        "version": "2.6.2",
         "upgradeVersion": "2.7.0"
-    },
-    {
-        "group": "androidx.compose.foundation",
-        "name": "foundation",
-        "from": "io.coil-kt:coil-compose-base:2.4.0",
-        "version": "1.4.3",
-        "upgradeVersion": "1.5.3"
     },
     {
         "group": "org.jetbrains.kotlinx",
         "name": "kotlinx-coroutines-core",
-        "from": "androidx.compose.animation:animation-core:1.5.3",
+        "from": "androidx.compose.animation:animation-core:1.5.4",
         "version": "1.6.4",
-        "upgradeVersion": "1.7.1"
-    },
-    {
-        "group": "org.jetbrains.kotlin",
-        "name": "kotlin-stdlib-jdk8",
-        "from": "io.coil-kt:coil:2.4.0",
-        "version": "1.8.21",
-        "upgradeVersion": "1.9.10"
-    },
-    {
-        "group": "org.jetbrains.kotlin",
-        "name": "kotlin-stdlib-jdk8",
-        "from": "io.coil-kt:coil-compose:2.4.0",
-        "version": "1.8.21",
-        "upgradeVersion": "1.9.10"
+        "upgradeVersion": "1.7.3"
     },
     {
         "group": "org.jetbrains.kotlin",
@@ -340,7 +319,7 @@
         "name": "runtime",
         "from": "androidx.activity:activity-compose:1.9.3",
         "version": "1.0.1",
-        "upgradeVersion": "1.5.3"
+        "upgradeVersion": "1.5.4"
     },
     {
         "group": "androidx.annotation",
@@ -445,7 +424,7 @@
         "name": "runtime",
         "from": "io.insert-koin:koin-androidx-compose:3.5.0",
         "version": "1.5.0",
-        "upgradeVersion": "1.5.3"
+        "upgradeVersion": "1.5.4"
     },
     {
         "group": "org.jetbrains.kotlin",
@@ -508,7 +487,7 @@
         "name": "foundation",
         "from": "com.google.accompanist:accompanist-adaptive:0.32.0",
         "version": "1.5.0",
-        "upgradeVersion": "1.5.3"
+        "upgradeVersion": "1.5.4"
     },
     {
         "group": "org.jetbrains.kotlin",

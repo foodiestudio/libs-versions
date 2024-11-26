@@ -37,12 +37,12 @@
                     "com.squareup.okhttp3:okhttp:4.12.0",
                     "com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:1.0.0",
                     "com.squareup.okhttp3:logging-interceptor:4.12.0",
-                    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1",
-                    "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1",
-                    "com.google.accompanist:accompanist-drawablepainter:0.30.1",
-                    "io.coil-kt:coil-compose-base:2.4.0",
-                    "io.coil-kt:coil:2.4.0",
-                    "io.coil-kt:coil-compose:2.4.0",
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.3",
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3",
+                    "com.google.accompanist:accompanist-drawablepainter:0.32.0",
+                    "io.coil-kt:coil-compose-base:2.5.0",
+                    "io.coil-kt:coil:2.5.0",
+                    "io.coil-kt:coil-compose:2.5.0",
                     "io.insert-koin:koin-core-jvm:3.5.0",
                     "io.insert-koin:koin-android:3.5.0",
                     "io.insert-koin:koin-compose-jvm:1.1.0",
@@ -55,7 +55,8 @@
                     "com.google.accompanist:accompanist-adaptive:0.32.0",
                     "com.google.accompanist:accompanist-testharness:0.32.0",
                     "com.google.accompanist:accompanist-placeholder:0.32.0",
-                    "app.cash.sqldelight:android-driver:2.0.0"
+                    "app.cash.sqldelight:android-driver:2.0.0",
+                    "com.github.foodiestudio:sugar:1.0.1"
                 ]
             }
         ]
@@ -75,29 +76,30 @@
                     "androidx.lifecycle:lifecycle-common:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.annotation:annotation-experimental:1.4.0",
-                    "androidx.compose.runtime:runtime-android:1.5.3",
+                    "androidx.compose.runtime:runtime-android:1.5.4",
+                    "androidx.collection:collection-jvm:1.3.0",
                     "androidx.core:core:1.13.0",
                     "androidx.core:core-ktx:1.13.0",
                     "androidx.savedstate:savedstate:1.2.1",
                     "androidx.savedstate:savedstate-ktx:1.2.1",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.activity:activity:1.9.3",
-                    "androidx.compose.runtime:runtime-saveable-android:1.5.3",
+                    "androidx.compose.runtime:runtime-saveable-android:1.5.4",
                     "androidx.activity:activity-compose:1.9.3",
                     "androidx.activity:activity-ktx:1.9.3",
-                    "androidx.compose.ui:ui-util-android:1.5.3",
-                    "androidx.compose.ui:ui-unit-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.ui:ui-geometry-android:1.5.3",
+                    "androidx.compose.ui:ui-util-android:1.5.4",
+                    "androidx.compose.ui:ui-unit-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.ui:ui-geometry-android:1.5.4",
                     "androidx.customview:customview-poolingcontainer:1.0.0",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.animation:animation-core-android:1.5.3",
-                    "androidx.compose.runtime:runtime-livedata:1.5.3",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.animation:animation-core-android:1.5.4",
+                    "androidx.compose.runtime:runtime-livedata:1.5.4",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
                     "androidx.lifecycle:lifecycle-runtime:2.7.0",
@@ -107,11 +109,10 @@
                     "androidx.datastore:datastore-preferences:1.0.0",
                     "androidx.datastore:datastore-preferences-core:1.0.0",
                     "androidx.fragment:fragment:1.6.1",
-                    "androidx.collection:collection-ktx:1.1.0",
                     "androidx.fragment:fragment-ktx:1.6.1",
                     "androidx.appcompat:appcompat:1.6.1",
-                    "io.coil-kt:coil-base:2.4.0",
-                    "androidx.compose.material:material-icons-core-android:1.5.3",
+                    "io.coil-kt:coil-base:2.5.0",
+                    "androidx.compose.material:material-icons-core-android:1.5.4",
                     "androidx.navigation:navigation-common:2.7.7",
                     "androidx.navigation:navigation-runtime:2.7.7",
                     "androidx.navigation:navigation-compose:2.7.7",
@@ -135,25 +136,25 @@
                     "com.squareup.okio:okio-jvm:3.6.0",
                     "org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.6.0",
                     "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.6.0",
-                    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1",
-                    "androidx.compose.runtime:runtime-android:1.5.3",
-                    "androidx.compose.runtime:runtime-saveable-android:1.5.3",
-                    "androidx.compose.ui:ui-util-android:1.5.3",
-                    "androidx.compose.ui:ui-unit-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.ui:ui-graphics-android:1.5.3",
-                    "androidx.compose.ui:ui-geometry-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.animation:animation-core-android:1.5.3",
-                    "androidx.compose.foundation:foundation-layout-android:1.5.3",
-                    "androidx.compose.animation:animation-android:1.5.3",
-                    "androidx.compose.foundation:foundation-android:1.5.3",
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.3",
+                    "androidx.compose.runtime:runtime-android:1.5.4",
+                    "androidx.compose.runtime:runtime-saveable-android:1.5.4",
+                    "androidx.compose.ui:ui-util-android:1.5.4",
+                    "androidx.compose.ui:ui-unit-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.ui:ui-graphics-android:1.5.4",
+                    "androidx.compose.ui:ui-geometry-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.animation:animation-core-android:1.5.4",
+                    "androidx.compose.foundation:foundation-layout-android:1.5.4",
+                    "androidx.compose.animation:animation-android:1.5.4",
+                    "androidx.compose.foundation:foundation-android:1.5.4",
                     "io.insert-koin:koin-core-jvm:3.5.0",
                     "io.insert-koin:koin-compose-jvm:1.1.0",
-                    "androidx.compose.material:material-icons-core-android:1.5.3",
-                    "androidx.compose.material:material-icons-extended-android:1.5.3",
-                    "androidx.compose.material:material-ripple-android:1.5.3",
-                    "androidx.compose.material:material-android:1.5.3",
+                    "androidx.compose.material:material-icons-core-android:1.5.4",
+                    "androidx.compose.material:material-icons-extended-android:1.5.4",
+                    "androidx.compose.material:material-ripple-android:1.5.4",
+                    "androidx.compose.material:material-android:1.5.4",
                     "io.github.aakira:napier-android:1.4.1"
                 ]
             }
@@ -167,7 +168,7 @@
                 "version": "23.0.0",
                 "from": [
                     "org.jetbrains.kotlin:kotlin-stdlib:1.9.10",
-                    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1"
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.3"
                 ]
             }
         ]
@@ -209,7 +210,7 @@
                     "com.squareup.retrofit2:retrofit:2.9.0",
                     "com.squareup.okhttp3:logging-interceptor:4.12.0",
                     "com.squareup.okhttp3:okhttp-bom:4.12.0",
-                    "io.coil-kt:coil-base:2.4.0"
+                    "io.coil-kt:coil-base:2.5.0"
                 ]
             }
         ]
@@ -222,9 +223,10 @@
                 "version": "3.6.0",
                 "from": [
                     "com.squareup.okhttp3:okhttp:4.12.0",
-                    "io.coil-kt:coil-base:2.4.0",
+                    "io.coil-kt:coil-base:2.5.0",
                     "project :app",
-                    "com.squareup.moshi:moshi:1.8.0"
+                    "com.squareup.moshi:moshi:1.8.0",
+                    "com.github.foodiestudio:sugar:1.0.1"
                 ]
             }
         ]
@@ -362,11 +364,10 @@
                     "androidx.arch.core:core-runtime:2.2.0",
                     "androidx.lifecycle:lifecycle-common:2.7.0",
                     "androidx.lifecycle:lifecycle-common-java8:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
-                    "androidx.compose.runtime:runtime-android:1.5.3",
+                    "androidx.compose.runtime:runtime-android:1.5.4",
                     "androidx.activity:activity:1.9.3",
-                    "androidx.collection:collection:1.2.0",
+                    "androidx.collection:collection-jvm:1.3.0",
                     "androidx.core:core:1.13.0",
                     "androidx.concurrent:concurrent-futures:1.1.0",
                     "androidx.interpolator:interpolator:1.0.0",
@@ -374,21 +375,22 @@
                     "androidx.core:core-ktx:1.13.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.savedstate:savedstate:1.2.1",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.profileinstaller:profileinstaller:1.3.1",
-                    "androidx.compose.runtime:runtime-saveable-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.ui:ui-geometry-android:1.5.3",
-                    "androidx.compose.ui:ui-graphics-android:1.5.3",
-                    "androidx.compose.ui:ui-unit-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
+                    "androidx.compose.runtime:runtime-saveable-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.ui:ui-geometry-android:1.5.4",
+                    "androidx.compose.ui:ui-graphics-android:1.5.4",
+                    "androidx.compose.ui:ui-unit-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
                     "androidx.emoji2:emoji2:1.4.0",
-                    "androidx.compose.foundation:foundation-android:1.5.3",
-                    "androidx.compose.animation:animation-android:1.5.3",
-                    "androidx.compose.animation:animation-core-android:1.5.3",
-                    "androidx.compose.foundation:foundation-layout-android:1.5.3",
+                    "androidx.compose.foundation:foundation-android:1.5.4",
+                    "androidx.compose.animation:animation-android:1.5.4",
+                    "androidx.compose.animation:animation-core-android:1.5.4",
+                    "androidx.compose.foundation:foundation-layout-android:1.5.4",
                     "androidx.datastore:datastore:1.0.0",
                     "androidx.datastore:datastore-core:1.0.0",
-                    "io.coil-kt:coil-base:2.4.0",
+                    "io.coil-kt:coil-base:2.5.0",
                     "androidx.appcompat:appcompat-resources:1.6.1",
                     "androidx.vectordrawable:vectordrawable:1.1.0",
                     "androidx.appcompat:appcompat:1.6.1",
@@ -401,11 +403,12 @@
                     "androidx.resourceinspection:resourceinspection-annotation:1.0.1",
                     "androidx.exifinterface:exifinterface:1.3.6",
                     "com.tencent:mmkv:1.3.7",
-                    "androidx.compose.material:material-android:1.5.3",
+                    "androidx.compose.material:material-android:1.5.4",
                     "androidx.navigation:navigation-common:2.7.7",
                     "androidx.window:window:1.0.0",
                     "androidx.sqlite:sqlite-framework:2.3.1",
-                    "androidx.sqlite:sqlite:2.3.1"
+                    "androidx.sqlite:sqlite:2.3.1",
+                    "androidx.documentfile:documentfile:1.0.1"
                 ]
             }
         ]
@@ -443,14 +446,14 @@
                 "version": "2.7.0",
                 "from": [
                     "project :app",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
+                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.activity:activity-ktx:1.9.3",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
-                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
                     "androidx.lifecycle:lifecycle-common-java8:2.7.0",
@@ -470,8 +473,7 @@
                 "version": "2.7.0",
                 "from": [
                     "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
+                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
@@ -479,10 +481,11 @@
                     "androidx.activity:activity:1.9.3",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.runtime:runtime-livedata:1.5.3",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.runtime:runtime-livedata:1.5.4",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
-                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
                     "androidx.lifecycle:lifecycle-common-java8:2.7.0",
@@ -490,8 +493,8 @@
                     "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0",
                     "androidx.fragment:fragment:1.6.1",
                     "androidx.appcompat:appcompat:1.6.1",
-                    "io.coil-kt:coil-base:2.4.0",
-                    "androidx.compose.material:material-android:1.5.3"
+                    "io.coil-kt:coil-base:2.5.0",
+                    "androidx.compose.material:material-android:1.5.4"
                 ]
             }
         ]
@@ -539,11 +542,11 @@
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.savedstate:savedstate:1.2.1",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
@@ -559,17 +562,17 @@
         "name": "kotlinx-coroutines-android",
         "versions": [
             {
-                "version": "1.7.1",
+                "version": "1.7.3",
                 "from": [
                     "androidx.lifecycle:lifecycle-common:2.7.0",
-                    "org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.7.1",
-                    "androidx.compose.runtime:runtime-android:1.5.3",
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.7.3",
+                    "androidx.compose.runtime:runtime-android:1.5.4",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.compose.ui:ui-android:1.5.3",
+                    "androidx.compose.ui:ui-android:1.5.4",
                     "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0",
-                    "com.google.accompanist:accompanist-drawablepainter:0.30.1",
-                    "io.coil-kt:coil-base:2.4.0",
+                    "com.google.accompanist:accompanist-drawablepainter:0.32.0",
+                    "io.coil-kt:coil-base:2.5.0",
                     "com.google.accompanist:accompanist-systemuicontroller:0.32.0",
                     "com.google.accompanist:accompanist-navigation-material:0.32.0",
                     "com.google.accompanist:accompanist-navigation-animation:0.32.0",
@@ -588,15 +591,15 @@
         "name": "kotlinx-coroutines-core",
         "versions": [
             {
-                "version": "1.7.1",
+                "version": "1.7.3",
                 "from": [
-                    "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1",
-                    "org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.7.1",
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3",
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.7.3",
                     "androidx.lifecycle:lifecycle-common:2.7.0",
-                    "androidx.compose.runtime:runtime-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.animation:animation-core-android:1.5.3",
+                    "androidx.compose.runtime:runtime-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.animation:animation-core-android:1.5.4",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
                     "androidx.datastore:datastore:1.0.0",
                     "androidx.datastore:datastore-core:1.0.0",
@@ -610,10 +613,10 @@
         "name": "kotlinx-coroutines-core-jvm",
         "versions": [
             {
-                "version": "1.7.1",
+                "version": "1.7.3",
                 "from": [
-                    "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1",
-                    "org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.7.1"
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3",
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-bom:1.7.3"
                 ]
             }
         ]
@@ -623,10 +626,10 @@
         "name": "kotlinx-coroutines-bom",
         "versions": [
             {
-                "version": "1.7.1",
+                "version": "1.7.3",
                 "from": [
-                    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.1",
-                    "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1"
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.7.3",
+                    "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
                 ]
             }
         ]
@@ -641,9 +644,9 @@
                     "androidx.lifecycle:lifecycle-common:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
@@ -666,11 +669,11 @@
                     "androidx.lifecycle:lifecycle-common-java8:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.compose.runtime:runtime-livedata:1.5.3",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
+                    "androidx.compose.runtime:runtime-livedata:1.5.4",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-common:2.7.0",
@@ -691,10 +694,10 @@
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
@@ -716,9 +719,9 @@
                 "version": "2.7.0",
                 "from": [
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
@@ -735,48 +738,25 @@
     },
     {
         "group": "androidx.lifecycle",
-        "name": "lifecycle-process",
-        "versions": [
-            {
-                "version": "2.7.0",
-                "from": [
-                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
-                    "androidx.emoji2:emoji2:1.4.0",
-                    "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
-                    "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
-                    "androidx.lifecycle:lifecycle-service:2.7.0",
-                    "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
-                    "androidx.lifecycle:lifecycle-livedata:2.7.0",
-                    "androidx.lifecycle:lifecycle-common-java8:2.7.0",
-                    "androidx.lifecycle:lifecycle-common:2.7.0",
-                    "androidx.lifecycle:lifecycle-runtime:2.7.0",
-                    "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0"
-                ]
-            }
-        ]
-    },
-    {
-        "group": "androidx.lifecycle",
         "name": "lifecycle-service",
         "versions": [
             {
                 "version": "2.7.0",
                 "from": [
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
+                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
-                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
                     "androidx.lifecycle:lifecycle-common-java8:2.7.0",
                     "androidx.lifecycle:lifecycle-common:2.7.0",
                     "androidx.lifecycle:lifecycle-runtime:2.7.0",
                     "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0",
-                    "project :app"
+                    "project :app",
+                    "com.github.foodiestudio:sugar:1.0.1"
                 ]
             }
         ]
@@ -794,10 +774,10 @@
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.activity:activity-compose:1.9.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-process:2.7.0",
+                    "androidx.activity:activity-compose:1.9.3",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
@@ -808,7 +788,7 @@
                     "androidx.fragment:fragment:1.6.1",
                     "androidx.loader:loader:1.0.0",
                     "androidx.appcompat:appcompat:1.6.1",
-                    "androidx.compose.material:material-android:1.5.3"
+                    "androidx.compose.material:material-android:1.5.4"
                 ]
             }
         ]
@@ -823,8 +803,8 @@
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
-                    "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-process:2.7.0",
+                    "androidx.lifecycle:lifecycle-service:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
@@ -858,29 +838,29 @@
         "name": "runtime",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
-                    "androidx.compose.runtime:runtime-livedata:1.5.3",
+                    "androidx.compose.runtime:runtime-livedata:1.5.4",
                     "androidx.activity:activity-compose:1.9.3",
-                    "androidx.compose.runtime:runtime-saveable-android:1.5.3",
-                    "androidx.compose.runtime:runtime-saveable-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.ui:ui-geometry-android:1.5.3",
-                    "androidx.compose.ui:ui-graphics-android:1.5.3",
-                    "androidx.compose.ui:ui-unit-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.animation:animation-core-android:1.5.3",
-                    "androidx.compose.foundation:foundation-layout-android:1.5.3",
-                    "androidx.compose.animation:animation-android:1.5.3",
-                    "androidx.compose.foundation:foundation-android:1.5.3",
-                    "androidx.compose.runtime:runtime-livedata:1.5.3",
+                    "androidx.compose.runtime:runtime-saveable-android:1.5.4",
+                    "androidx.compose.runtime:runtime-saveable-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.ui:ui-geometry-android:1.5.4",
+                    "androidx.compose.ui:ui-graphics-android:1.5.4",
+                    "androidx.compose.ui:ui-unit-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.animation:animation-core-android:1.5.4",
+                    "androidx.compose.foundation:foundation-layout-android:1.5.4",
+                    "androidx.compose.animation:animation-android:1.5.4",
+                    "androidx.compose.foundation:foundation-android:1.5.4",
+                    "androidx.compose.runtime:runtime-livedata:1.5.4",
                     "org.jetbrains.compose.runtime:runtime:1.5.0",
                     "io.insert-koin:koin-androidx-compose:3.5.0",
-                    "androidx.compose.material:material-icons-extended-android:1.5.3",
-                    "androidx.compose.material:material-ripple-android:1.5.3",
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00",
+                    "androidx.compose.material:material-icons-extended-android:1.5.4",
+                    "androidx.compose.material:material-ripple-android:1.5.4",
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01",
                     "androidx.navigation:navigation-compose:2.7.7"
                 ]
             }
@@ -891,10 +871,10 @@
         "name": "runtime-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.runtime:runtime:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.runtime:runtime:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -904,11 +884,11 @@
         "name": "runtime-livedata",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.runtime:runtime-android:1.5.3",
-                    "androidx.compose.runtime:runtime-saveable-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00",
+                    "androidx.compose.runtime:runtime-android:1.5.4",
+                    "androidx.compose.runtime:runtime-saveable-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01",
                     "project :app"
                 ]
             }
@@ -919,28 +899,29 @@
         "name": "ui",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.runtime:runtime-livedata:1.5.3",
+                    "androidx.compose.runtime:runtime-livedata:1.5.4",
                     "androidx.activity:activity-compose:1.9.3",
-                    "androidx.compose.ui:ui-util-android:1.5.3",
-                    "androidx.compose.ui:ui-unit-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.ui:ui-graphics-android:1.5.3",
-                    "androidx.compose.ui:ui-geometry-android:1.5.3",
-                    "androidx.compose.animation:animation-core-android:1.5.3",
-                    "androidx.compose.foundation:foundation-layout-android:1.5.3",
-                    "androidx.compose.animation:animation-android:1.5.3",
-                    "androidx.compose.foundation:foundation-android:1.5.3",
+                    "androidx.compose.ui:ui-util-android:1.5.4",
+                    "androidx.compose.ui:ui-unit-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.ui:ui-graphics-android:1.5.4",
+                    "androidx.compose.ui:ui-geometry-android:1.5.4",
+                    "androidx.compose.animation:animation-core-android:1.5.4",
+                    "androidx.compose.foundation:foundation-layout-android:1.5.4",
+                    "androidx.compose.animation:animation-android:1.5.4",
+                    "androidx.compose.foundation:foundation-android:1.5.4",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
-                    "com.google.accompanist:accompanist-drawablepainter:0.30.1",
-                    "androidx.compose.material:material-icons-core-android:1.5.3",
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00",
+                    "com.google.accompanist:accompanist-drawablepainter:0.32.0",
+                    "androidx.compose.material:material-icons-core-android:1.5.4",
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01",
                     "project :app",
                     "androidx.navigation:navigation-compose:2.7.7",
                     "com.google.accompanist:accompanist-systemuicontroller:0.32.0",
-                    "com.google.accompanist:accompanist-adaptive:0.32.0"
+                    "com.google.accompanist:accompanist-adaptive:0.32.0",
+                    "com.github.foodiestudio:sugar:1.0.1"
                 ]
             }
         ]
@@ -950,10 +931,10 @@
         "name": "ui-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.ui:ui:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.ui:ui:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -965,7 +946,7 @@
             {
                 "version": "1.9.3",
                 "from": [
-                    "androidx.compose.ui:ui-android:1.5.3",
+                    "androidx.compose.ui:ui-android:1.5.4",
                     "androidx.activity:activity-compose:1.9.3",
                     "androidx.activity:activity-compose:1.9.3",
                     "androidx.activity:activity:1.9.3",
@@ -997,13 +978,15 @@
         "name": "collection",
         "versions": [
             {
-                "version": "1.2.0",
+                "version": "1.3.0",
                 "from": [
                     "androidx.activity:activity:1.9.3",
+                    "androidx.collection:collection-ktx:1.3.0",
+                    "androidx.collection:collection-ktx:1.3.0",
                     "androidx.core:core:1.13.0",
                     "androidx.versionedparcelable:versionedparcelable:1.1.1",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
                     "androidx.emoji2:emoji2:1.4.0",
                     "androidx.emoji2:emoji2-views-helper:1.4.0",
                     "androidx.appcompat:appcompat-resources:1.6.1",
@@ -1011,11 +994,37 @@
                     "androidx.vectordrawable:vectordrawable-animated:1.1.0",
                     "androidx.appcompat:appcompat:1.6.1",
                     "androidx.fragment:fragment:1.6.1",
-                    "androidx.collection:collection-ktx:1.1.0",
-                    "io.coil-kt:coil-base:2.4.0",
+                    "io.coil-kt:coil-base:2.5.0",
                     "androidx.navigation:navigation-runtime:2.7.7",
                     "androidx.window:window:1.0.0",
                     "com.google.android.gms:play-services-basement:18.3.0"
+                ]
+            }
+        ]
+    },
+    {
+        "group": "androidx.collection",
+        "name": "collection-jvm",
+        "versions": [
+            {
+                "version": "1.3.0",
+                "from": [
+                    "androidx.collection:collection:1.3.0"
+                ]
+            }
+        ]
+    },
+    {
+        "group": "androidx.collection",
+        "name": "collection-ktx",
+        "versions": [
+            {
+                "version": "1.3.0",
+                "from": [
+                    "androidx.collection:collection-jvm:1.3.0",
+                    "androidx.collection:collection-jvm:1.3.0",
+                    "androidx.fragment:fragment-ktx:1.6.1",
+                    "androidx.navigation:navigation-common:2.7.7"
                 ]
             }
         ]
@@ -1031,12 +1040,12 @@
                     "androidx.core:core-ktx:1.13.0",
                     "androidx.core:core-ktx:1.13.0",
                     "androidx.autofill:autofill:1.0.0",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
                     "androidx.emoji2:emoji2:1.4.0",
                     "androidx.emoji2:emoji2-views-helper:1.4.0",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.foundation:foundation-layout-android:1.5.3",
-                    "androidx.compose.foundation:foundation-android:1.5.3",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.foundation:foundation-layout-android:1.5.4",
+                    "androidx.compose.foundation:foundation-android:1.5.4",
                     "androidx.appcompat:appcompat-resources:1.6.1",
                     "androidx.vectordrawable:vectordrawable:1.1.0",
                     "androidx.appcompat:appcompat:1.6.1",
@@ -1113,11 +1122,11 @@
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
                     "androidx.activity:activity-ktx:1.9.3",
                     "androidx.customview:customview-poolingcontainer:1.0.0",
-                    "io.coil-kt:coil-compose-base:2.4.0",
+                    "io.coil-kt:coil-compose-base:2.5.0",
                     "androidx.appcompat:appcompat:1.6.1",
                     "androidx.fragment:fragment:1.6.1",
                     "androidx.fragment:fragment-ktx:1.6.1",
-                    "io.coil-kt:coil-base:2.4.0",
+                    "io.coil-kt:coil-base:2.5.0",
                     "androidx.navigation:navigation-common:2.7.7",
                     "com.google.accompanist:accompanist-systemuicontroller:0.32.0",
                     "com.google.accompanist:accompanist-testharness:0.32.0"
@@ -1134,11 +1143,11 @@
                 "from": [
                     "androidx.activity:activity:1.9.3",
                     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
@@ -1165,7 +1174,7 @@
                     "androidx.activity:activity:1.9.3",
                     "androidx.fragment:fragment:1.6.1",
                     "androidx.appcompat:appcompat:1.6.1",
-                    "androidx.compose.material:material-android:1.5.3"
+                    "androidx.compose.material:material-android:1.5.4"
                 ]
             }
         ]
@@ -1179,7 +1188,7 @@
                 "from": [
                     "androidx.savedstate:savedstate:1.2.1",
                     "androidx.activity:activity-ktx:1.9.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
+                    "androidx.compose.ui:ui-android:1.5.4",
                     "androidx.fragment:fragment-ktx:1.6.1",
                     "androidx.navigation:navigation-common:2.7.7"
                 ]
@@ -1194,12 +1203,12 @@
                 "version": "2.7.0",
                 "from": [
                     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
+                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.activity:activity-ktx:1.9.3",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
                     "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
                     "androidx.lifecycle:lifecycle-service:2.7.0",
-                    "androidx.lifecycle:lifecycle-process:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
                     "androidx.lifecycle:lifecycle-livedata:2.7.0",
@@ -1216,6 +1225,30 @@
         ]
     },
     {
+        "group": "androidx.lifecycle",
+        "name": "lifecycle-process",
+        "versions": [
+            {
+                "version": "2.7.0",
+                "from": [
+                    "androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0",
+                    "androidx.emoji2:emoji2:1.4.0",
+                    "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0",
+                    "androidx.lifecycle:lifecycle-viewmodel:2.7.0",
+                    "androidx.lifecycle:lifecycle-service:2.7.0",
+                    "androidx.lifecycle:lifecycle-livedata-core-ktx:2.7.0",
+                    "androidx.lifecycle:lifecycle-livedata-core:2.7.0",
+                    "androidx.lifecycle:lifecycle-livedata:2.7.0",
+                    "androidx.lifecycle:lifecycle-common-java8:2.7.0",
+                    "androidx.lifecycle:lifecycle-common:2.7.0",
+                    "androidx.lifecycle:lifecycle-runtime:2.7.0",
+                    "androidx.lifecycle:lifecycle-runtime-ktx:2.7.0"
+                ]
+            }
+        ]
+    },
+    {
         "group": "androidx.profileinstaller",
         "name": "profileinstaller",
         "versions": [
@@ -1223,10 +1256,10 @@
                 "version": "1.3.1",
                 "from": [
                     "androidx.activity:activity:1.9.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
+                    "androidx.compose.ui:ui-android:1.5.4",
                     "androidx.lifecycle:lifecycle-runtime:2.7.0",
                     "androidx.fragment:fragment:1.6.1",
-                    "io.coil-kt:coil-base:2.4.0",
+                    "io.coil-kt:coil-base:2.5.0",
                     "androidx.navigation:navigation-common:2.7.7"
                 ]
             }
@@ -1253,14 +1286,14 @@
         "name": "runtime-saveable",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
                     "androidx.activity:activity-compose:1.9.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.runtime:runtime-livedata:1.5.3",
-                    "androidx.compose.runtime:runtime-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.runtime:runtime-livedata:1.5.4",
+                    "androidx.compose.runtime:runtime-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01",
                     "androidx.navigation:navigation-compose:2.7.7"
                 ]
             }
@@ -1271,10 +1304,10 @@
         "name": "runtime-saveable-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.runtime:runtime-saveable:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.runtime:runtime-saveable:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1286,7 +1319,7 @@
             {
                 "version": "1.0.0",
                 "from": [
-                    "androidx.compose.ui:ui-android:1.5.3"
+                    "androidx.compose.ui:ui-android:1.5.4"
                 ]
             }
         ]
@@ -1296,17 +1329,17 @@
         "name": "ui-geometry",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.ui:ui-util-android:1.5.3",
-                    "androidx.compose.ui:ui-unit-android:1.5.3",
-                    "androidx.compose.ui:ui-unit-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.ui:ui-graphics-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.animation:animation-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.ui:ui-util-android:1.5.4",
+                    "androidx.compose.ui:ui-unit-android:1.5.4",
+                    "androidx.compose.ui:ui-unit-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.ui:ui-graphics-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.animation:animation-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1316,10 +1349,10 @@
         "name": "ui-geometry-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.ui:ui-geometry:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.ui:ui-geometry:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1329,25 +1362,25 @@
         "name": "ui-util",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.ui:ui-geometry-android:1.5.3",
-                    "androidx.compose.ui:ui-unit-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.ui:ui-unit-android:1.5.3",
-                    "androidx.compose.ui:ui-graphics-android:1.5.3",
-                    "androidx.compose.ui:ui-graphics-android:1.5.3",
-                    "androidx.compose.ui:ui-geometry-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.animation:animation-core-android:1.5.3",
-                    "androidx.compose.foundation:foundation-layout-android:1.5.3",
-                    "androidx.compose.animation:animation-android:1.5.3",
-                    "androidx.compose.foundation:foundation-android:1.5.3",
-                    "androidx.compose.material:material-ripple-android:1.5.3",
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00",
+                    "androidx.compose.ui:ui-geometry-android:1.5.4",
+                    "androidx.compose.ui:ui-unit-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.ui:ui-unit-android:1.5.4",
+                    "androidx.compose.ui:ui-graphics-android:1.5.4",
+                    "androidx.compose.ui:ui-graphics-android:1.5.4",
+                    "androidx.compose.ui:ui-geometry-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.animation:animation-core-android:1.5.4",
+                    "androidx.compose.foundation:foundation-layout-android:1.5.4",
+                    "androidx.compose.animation:animation-android:1.5.4",
+                    "androidx.compose.foundation:foundation-android:1.5.4",
+                    "androidx.compose.material:material-ripple-android:1.5.4",
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01",
                     "com.google.accompanist:accompanist-adaptive:0.32.0",
                     "com.google.accompanist:accompanist-placeholder:0.32.0"
                 ]
@@ -1359,10 +1392,10 @@
         "name": "ui-util-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.ui:ui-util:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.ui:ui-util:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1372,16 +1405,16 @@
         "name": "ui-graphics",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.ui:ui-util-android:1.5.3",
-                    "androidx.compose.ui:ui-unit-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.ui:ui-geometry-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.ui:ui-util-android:1.5.4",
+                    "androidx.compose.ui:ui-unit-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.ui:ui-geometry-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1391,10 +1424,10 @@
         "name": "ui-graphics-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.ui:ui-graphics:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.ui:ui-graphics:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1404,18 +1437,18 @@
         "name": "ui-unit",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.ui:ui-graphics-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.ui:ui-text-android:1.5.3",
-                    "androidx.compose.ui:ui-graphics-android:1.5.3",
-                    "androidx.compose.ui:ui-util-android:1.5.3",
-                    "androidx.compose.ui:ui-geometry-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.animation:animation-core-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.ui:ui-graphics-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
+                    "androidx.compose.ui:ui-graphics-android:1.5.4",
+                    "androidx.compose.ui:ui-util-android:1.5.4",
+                    "androidx.compose.ui:ui-geometry-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.animation:animation-core-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1425,10 +1458,10 @@
         "name": "ui-unit-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.ui:ui-unit:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.ui:ui-unit:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1438,17 +1471,17 @@
         "name": "ui-text",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.ui:ui-unit-android:1.5.3",
-                    "androidx.compose.ui:ui-graphics-android:1.5.3",
-                    "androidx.compose.ui:ui-util-android:1.5.3",
-                    "androidx.compose.ui:ui-geometry-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.foundation:foundation-android:1.5.3",
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.ui:ui-unit-android:1.5.4",
+                    "androidx.compose.ui:ui-graphics-android:1.5.4",
+                    "androidx.compose.ui:ui-util-android:1.5.4",
+                    "androidx.compose.ui:ui-geometry-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.foundation:foundation-android:1.5.4",
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1458,10 +1491,10 @@
         "name": "ui-text-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.ui:ui-text:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.ui:ui-text:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1473,11 +1506,11 @@
             {
                 "version": "1.4.0",
                 "from": [
-                    "androidx.compose.ui:ui-text-android:1.5.3",
+                    "androidx.compose.ui:ui-text-android:1.5.4",
                     "androidx.emoji2:emoji2-views-helper:1.4.0",
                     "androidx.emoji2:emoji2-views-helper:1.4.0",
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.foundation:foundation-android:1.5.3",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.foundation:foundation-android:1.5.4",
                     "androidx.appcompat:appcompat:1.6.1"
                 ]
             }
@@ -1503,7 +1536,7 @@
             {
                 "version": "1.0.0",
                 "from": [
-                    "androidx.compose.ui:ui-android:1.5.3"
+                    "androidx.compose.ui:ui-android:1.5.4"
                 ]
             }
         ]
@@ -1513,21 +1546,22 @@
         "name": "foundation",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.ui:ui-android:1.5.3",
-                    "androidx.compose.foundation:foundation-layout-android:1.5.3",
-                    "io.coil-kt:coil-compose-base:2.4.0",
-                    "androidx.compose:compose-bom:2023.10.00",
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose.material:material-ripple-android:1.5.3",
+                    "androidx.compose.ui:ui-android:1.5.4",
+                    "androidx.compose.foundation:foundation-layout-android:1.5.4",
+                    "io.coil-kt:coil-compose-base:2.5.0",
+                    "androidx.compose:compose-bom:2023.10.01",
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose.material:material-ripple-android:1.5.4",
                     "project :app",
                     "com.google.accompanist:accompanist-navigation-material:0.32.0",
                     "com.google.accompanist:accompanist-navigation-animation:0.32.0",
                     "com.google.accompanist:accompanist-permissions:0.32.0",
                     "com.google.accompanist:accompanist-adaptive:0.32.0",
                     "com.google.accompanist:accompanist-testharness:0.32.0",
-                    "com.google.accompanist:accompanist-placeholder:0.32.0"
+                    "com.google.accompanist:accompanist-placeholder:0.32.0",
+                    "com.github.foodiestudio:sugar:1.0.1"
                 ]
             }
         ]
@@ -1537,10 +1571,10 @@
         "name": "foundation-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.foundation:foundation:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.foundation:foundation:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1550,13 +1584,13 @@
         "name": "animation",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.foundation:foundation-android:1.5.3",
-                    "androidx.compose.animation:animation-core-android:1.5.3",
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose.material:material-ripple-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00",
+                    "androidx.compose.foundation:foundation-android:1.5.4",
+                    "androidx.compose.animation:animation-core-android:1.5.4",
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose.material:material-ripple-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01",
                     "androidx.navigation:navigation-compose:2.7.7",
                     "com.google.accompanist:accompanist-navigation-animation:0.32.0"
                 ]
@@ -1568,10 +1602,10 @@
         "name": "animation-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.animation:animation:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.animation:animation:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1581,13 +1615,13 @@
         "name": "animation-core",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.animation:animation-android:1.5.3",
-                    "androidx.compose.foundation:foundation-layout-android:1.5.3",
-                    "androidx.compose.animation:animation-android:1.5.3",
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.animation:animation-android:1.5.4",
+                    "androidx.compose.foundation:foundation-layout-android:1.5.4",
+                    "androidx.compose.animation:animation-android:1.5.4",
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1597,10 +1631,10 @@
         "name": "animation-core-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.animation:animation-core:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.animation:animation-core:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1610,13 +1644,13 @@
         "name": "foundation-layout",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.animation:animation-android:1.5.3",
-                    "androidx.compose.foundation:foundation-android:1.5.3",
-                    "androidx.compose.foundation:foundation-android:1.5.3",
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00",
+                    "androidx.compose.animation:animation-android:1.5.4",
+                    "androidx.compose.foundation:foundation-android:1.5.4",
+                    "androidx.compose.foundation:foundation-android:1.5.4",
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01",
                     "androidx.navigation:navigation-compose:2.7.7"
                 ]
             }
@@ -1627,10 +1661,10 @@
         "name": "foundation-layout-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.foundation:foundation-layout:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.foundation:foundation-layout:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -1702,7 +1736,7 @@
         "name": "coil-bom",
         "versions": [
             {
-                "version": "2.4.0",
+                "version": "2.5.0",
                 "from": [
                     "project :app"
                 ]
@@ -1714,9 +1748,9 @@
         "name": "coil-compose",
         "versions": [
             {
-                "version": "2.4.0",
+                "version": "2.5.0",
                 "from": [
-                    "io.coil-kt:coil-bom:2.4.0",
+                    "io.coil-kt:coil-bom:2.5.0",
                     "project :app"
                 ]
             }
@@ -1727,10 +1761,10 @@
         "name": "coil-compose-base",
         "versions": [
             {
-                "version": "2.4.0",
+                "version": "2.5.0",
                 "from": [
-                    "io.coil-kt:coil-compose:2.4.0",
-                    "io.coil-kt:coil-bom:2.4.0"
+                    "io.coil-kt:coil-compose:2.5.0",
+                    "io.coil-kt:coil-bom:2.5.0"
                 ]
             }
         ]
@@ -1740,9 +1774,9 @@
         "name": "accompanist-drawablepainter",
         "versions": [
             {
-                "version": "0.30.1",
+                "version": "0.32.0",
                 "from": [
-                    "io.coil-kt:coil-compose-base:2.4.0"
+                    "io.coil-kt:coil-compose-base:2.5.0"
                 ]
             }
         ]
@@ -1752,11 +1786,11 @@
         "name": "coil-base",
         "versions": [
             {
-                "version": "2.4.0",
+                "version": "2.5.0",
                 "from": [
-                    "io.coil-kt:coil-compose-base:2.4.0",
-                    "io.coil-kt:coil:2.4.0",
-                    "io.coil-kt:coil-bom:2.4.0"
+                    "io.coil-kt:coil-compose-base:2.5.0",
+                    "io.coil-kt:coil:2.5.0",
+                    "io.coil-kt:coil-bom:2.5.0"
                 ]
             }
         ]
@@ -1768,7 +1802,7 @@
             {
                 "version": "1.6.1",
                 "from": [
-                    "io.coil-kt:coil-base:2.4.0",
+                    "io.coil-kt:coil-base:2.5.0",
                     "androidx.appcompat:appcompat:1.6.1",
                     "androidx.appcompat:appcompat:1.6.1"
                 ]
@@ -1904,19 +1938,6 @@
         ]
     },
     {
-        "group": "androidx.collection",
-        "name": "collection-ktx",
-        "versions": [
-            {
-                "version": "1.1.0",
-                "from": [
-                    "androidx.fragment:fragment-ktx:1.6.1",
-                    "androidx.navigation:navigation-common:2.7.7"
-                ]
-            }
-        ]
-    },
-    {
         "group": "androidx.resourceinspection",
         "name": "resourceinspection-annotation",
         "versions": [
@@ -1935,7 +1956,7 @@
             {
                 "version": "1.3.6",
                 "from": [
-                    "io.coil-kt:coil-base:2.4.0"
+                    "io.coil-kt:coil-base:2.5.0"
                 ]
             }
         ]
@@ -1945,10 +1966,10 @@
         "name": "coil",
         "versions": [
             {
-                "version": "2.4.0",
+                "version": "2.5.0",
                 "from": [
-                    "io.coil-kt:coil-compose:2.4.0",
-                    "io.coil-kt:coil-bom:2.4.0"
+                    "io.coil-kt:coil-compose:2.5.0",
+                    "io.coil-kt:coil-bom:2.5.0"
                 ]
             }
         ]
@@ -2083,9 +2104,10 @@
         "name": "compose-bom",
         "versions": [
             {
-                "version": "2023.10.00",
+                "version": "2023.10.01",
                 "from": [
-                    "project :app"
+                    "project :app",
+                    "com.github.foodiestudio:sugar:1.0.1"
                 ]
             }
         ]
@@ -2095,12 +2117,12 @@
         "name": "material",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose:compose-bom:2023.10.00",
-                    "androidx.compose.material:material-icons-core-android:1.5.3",
-                    "androidx.compose.material:material-icons-extended-android:1.5.3",
-                    "androidx.compose.material:material-ripple-android:1.5.3",
+                    "androidx.compose:compose-bom:2023.10.01",
+                    "androidx.compose.material:material-icons-core-android:1.5.4",
+                    "androidx.compose.material:material-icons-extended-android:1.5.4",
+                    "androidx.compose.material:material-ripple-android:1.5.4",
                     "project :app",
                     "com.google.accompanist:accompanist-navigation-material:0.32.0",
                     "com.google.accompanist:accompanist-navigation-animation:0.32.0"
@@ -2113,10 +2135,10 @@
         "name": "material-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.material:material:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.material:material:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -2126,14 +2148,14 @@
         "name": "material-icons-core",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose.material:material-icons-extended-android:1.5.3",
-                    "androidx.compose.material:material-icons-extended-android:1.5.3",
-                    "androidx.compose.material:material-ripple-android:1.5.3",
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose.material:material-icons-extended-android:1.5.4",
+                    "androidx.compose.material:material-icons-extended-android:1.5.4",
+                    "androidx.compose.material:material-ripple-android:1.5.4",
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -2143,10 +2165,10 @@
         "name": "material-icons-core-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.material:material-icons-core:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.material:material-icons-core:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -2156,12 +2178,12 @@
         "name": "material-icons-extended",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.material:material-icons-core-android:1.5.3",
-                    "androidx.compose.material:material-ripple-android:1.5.3",
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00",
+                    "androidx.compose.material:material-icons-core-android:1.5.4",
+                    "androidx.compose.material:material-ripple-android:1.5.4",
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01",
                     "project :app"
                 ]
             }
@@ -2172,10 +2194,10 @@
         "name": "material-icons-extended-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.material:material-icons-extended:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.material:material-icons-extended:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -2185,13 +2207,13 @@
         "name": "material-ripple",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.material:material-icons-extended-android:1.5.3",
-                    "androidx.compose.material:material-icons-core-android:1.5.3",
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose.material:material-android:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.material:material-icons-extended-android:1.5.4",
+                    "androidx.compose.material:material-icons-core-android:1.5.4",
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose.material:material-android:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -2201,10 +2223,10 @@
         "name": "material-ripple-android",
         "versions": [
             {
-                "version": "1.5.3",
+                "version": "1.5.4",
                 "from": [
-                    "androidx.compose.material:material-ripple:1.5.3",
-                    "androidx.compose:compose-bom:2023.10.00"
+                    "androidx.compose.material:material-ripple:1.5.4",
+                    "androidx.compose:compose-bom:2023.10.01"
                 ]
             }
         ]
@@ -2536,6 +2558,30 @@
                 "from": [
                     "com.google.android.play:asset-delivery:2.2.2",
                     "com.google.android.play:asset-delivery-ktx:2.2.2"
+                ]
+            }
+        ]
+    },
+    {
+        "group": "com.github.foodiestudio",
+        "name": "sugar",
+        "versions": [
+            {
+                "version": "1.0.1",
+                "from": [
+                    "project :app"
+                ]
+            }
+        ]
+    },
+    {
+        "group": "androidx.documentfile",
+        "name": "documentfile",
+        "versions": [
+            {
+                "version": "1.0.1",
+                "from": [
+                    "com.github.foodiestudio:sugar:1.0.1"
                 ]
             }
         ]
